@@ -1,6 +1,9 @@
 <h1>영화커뮤니티(MOVIEMOA) - 팀프로젝트</h1>
 
-<p>Back-End 기능</p>
+<blockquote>
+  <p>Back-End 기능</p>
+</blockquote>
+
 <ul>
 <li>영화등록</li>
   
