@@ -86,3 +86,6 @@
       
       return forward;
 ```
+
+## 영화상세페이지 조회
+![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
