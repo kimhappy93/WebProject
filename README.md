@@ -1,12 +1,9 @@
 <h1>영화커뮤니티(MOVIEMOA) - 팀프로젝트</h1>
 
-<blockquote>
-  <p>Back-End 기능</p>
-</blockquote>
+><p>Back-End 기능</p>
 
 ![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
-<ul>
-<li>영화등록</li>
+- 영화등록
   
       String realFolder = ""; //서버 상의 파일 경로를 저장할 실제 경로를 저장할 변수 정의
       String saveFolder = "/moviefile"; //파일 업로드할 디렉토리
