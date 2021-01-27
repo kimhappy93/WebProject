@@ -40,12 +40,70 @@ function chkchk (form){
 } 
 ```
 
+> 영화 평점을 숫자로 표현
+```
+//별점 숫자로
+var logID = 'log',
+  log = $('<h3 id="'+logID+'"></h3>');
+$('.rating').prepend(log);
+  $('[type*="checkbox"]').change(function () {
+    var me = $(this);
+    log.html(me.attr('value'));
+});
+```
+
+> 네티즌 리뷰 부분에 출력되는 평점
+```
+//숫자 별점으로
+$.fn.generateStars = function() {
+    return this.each(function(i,e){$(e).html($('<span/>').width($(e).text()*16));});
+};
+
+// 숫자 평점을 별로 변환하도록 호출하는 함수
+$('.star-prototype').generateStars();
+```
+
+> 사진 슬라이드
+```
+//슬라이드
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+```
+
 ## Back-End 기능
 
 > 영화 리스트 페이징 처리
+
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
 > 관리자 영화등록
+
 ![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
 
 ```
