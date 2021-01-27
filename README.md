@@ -2,6 +2,8 @@
 
 ><p>Back-End 기능</p>
 
+## 영화 리스트 페이징 처리
+![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
 ## 관리자 영화등록
 ![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
