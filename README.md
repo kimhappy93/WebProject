@@ -3,7 +3,7 @@
 ><p>Back-End 기능</p>
 
 
-## 영화등록
+## 관리자 영화등록
 ![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
 
 ```
@@ -89,3 +89,6 @@
 
 ## 영화상세페이지 조회
 ![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
+
+## 회원 영화 평점 및 리뷰 등록, 삭제
+![gif3](https://user-images.githubusercontent.com/68000697/105955523-c8dbdb00-60b9-11eb-8cff-10f4add555b6.gif)
