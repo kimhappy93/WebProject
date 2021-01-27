@@ -90,5 +90,8 @@
 ## 영화상세페이지 조회
 ![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
 
-## 회원 영화 평점 및 리뷰 등록, 삭제
-![gif3](https://user-images.githubusercontent.com/68000697/105955523-c8dbdb00-60b9-11eb-8cff-10f4add555b6.gif)
+## 회원 영화 평점 및 리뷰 등록
+![gif3](https://user-images.githubusercontent.com/68000697/105955782-253efa80-60ba-11eb-9267-e84e2529378b.gif)
+
+## 회원 영화 평점 및 리뷰 삭제
+![gif4](https://user-images.githubusercontent.com/68000697/105955946-66370f00-60ba-11eb-8885-ed67e35fad21.gif)
