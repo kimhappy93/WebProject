@@ -5,6 +5,7 @@
 </blockquote>
 
 <ul>
+<li>![gif1](https://user-images.githubusercontent.com/68000697/105951440-5c5ddd80-60b3-11eb-8118-e01ddfa1291a.gif)</il>
 <li>영화등록</li>
   
       String realFolder = ""; //서버 상의 파일 경로를 저장할 실제 경로를 저장할 변수 정의
@@ -86,5 +87,3 @@
       
       return forward;
 </ul>
-
-<img src="https://im6.ezgif.com/tmp/ezgif-6-4ff09759cc02.gif">
