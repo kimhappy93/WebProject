@@ -1,11 +1,51 @@
 # 영화커뮤니티(MOVIEMOA) - 팀프로젝트
 
-><p>Back-End 기능</p>
+## Front-End 기능
+> 더보기 버튼
+```
+//더보기
+document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이벤트 리스너 등록
+    //더보기 버튼 이벤트 리스너
+    document.querySelector('.btn_open').addEventListener('click', function(e){
+        
+        let classList = document.querySelector('.detailinfo').classList; // 더보기 프레임의 클래스 정보 얻기
+        let contentHeight = document.querySelector('.detailinfo > .content').offsetHeight; //컨텐츠 높이 얻기
+        
+        // 숨긴 내용 보이기
+        if(classList.contains('showstep1')){
+            classList.remove('showstep1');
+            if(contentHeight > 400){
+                classList.add('showstep2'); document.querySelector('.btn_open').classList.add('hide');
+            }
+        } 
+    });
+});
+```
 
-## 영화 리스트 페이징 처리
+> 영화 평점 체크
+```
+//별점 체크
+function chkchk (form){ 
+    var arr_form = document.getElementsByName('m_star'); 
+    var num = 0; 
+    for(var i=0; i<arr_form.length; i++){ 
+        if(arr_form[i].checked){ 
+            num++; 
+        } 
+    } 
+    if(!num){ 
+        alert('별점을 눌러주세요.'); 
+        return false; 
+    } 
+} 
+```
+
+## Back-End 기능
+
+> 영화 리스트 페이징 처리
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
-## 관리자 영화등록
+> 관리자 영화등록
 ![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
 
 ```
@@ -89,11 +129,11 @@
       return forward;
 ```
 
-## 영화상세페이지 조회
+> 영화상세페이지 조회
 ![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
 
-## 회원 영화 평점 및 리뷰 등록
+> 회원 영화 평점 및 리뷰 등록
 ![gif3](https://user-images.githubusercontent.com/68000697/105955782-253efa80-60ba-11eb-9267-e84e2529378b.gif)
 
-## 회원 영화 평점 및 리뷰 삭제
+> 회원 영화 평점 및 리뷰 삭제
 ![gif4](https://user-images.githubusercontent.com/68000697/105955946-66370f00-60ba-11eb-8885-ed67e35fad21.gif)
