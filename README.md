@@ -4,7 +4,7 @@
   <p>Back-End 기능</p>
 </blockquote>
 
-![gif1](https://user-images.githubusercontent.com/68000697/105952094-6c29f180-60b4-11eb-9f31-19eb0c24ac38.gif)
+![gif1](https://user-images.githubusercontent.com/68000697/105953491-9aa8cc00-60b6-11eb-8993-f3784ca085b8.gif)
 <ul>
 <li>영화등록</li>
   
