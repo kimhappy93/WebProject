@@ -213,3 +213,70 @@ function showSlides(n) {
 > 회원 영화 평점 및 리뷰 삭제
 
 ![gif4](https://user-images.githubusercontent.com/68000697/105955946-66370f00-60ba-11eb-8885-ed67e35fad21.gif)
+
+```
+<%
+   request.setCharacterEncoding("UTF-8"); // 인코딩
+   String id = (String)session.getAttribute("idKey"); //로그인한 아이디 값
+   int m_id = Integer.parseInt(request.getParameter("m_id")); //해당 영화 아이디 파라미터 값    
+   
+   MovieReviewBean movieReviewBean = new MovieReviewBean();
+
+   MovieReviewListService movieReviewService = new MovieReviewListService();   
+   ArrayList<MovieReviewBean> reviewList = movieReviewService.selectMovieReview(movieReviewBean, m_id); //해당 영화의 영화 리뷰 및 평점 목록
+%>
+```
+```
+<!--        영화 리뷰 및 평점 목록        -->
+            <section id="review2">
+               <a name="review"></a>
+                <h3 class="s_title">네티즌 리뷰</h3>
+                <div id="reviewbox">
+                
+                <!--        영화 리뷰 및 평점이 없을 경우        -->
+                <%if(reviewList.size() == 0) {%>
+                <p>리뷰가 없습니다. 리뷰를 남겨주세요.</p>
+                
+                <!--        영화 리뷰 및 평점이 있을 경우        -->
+                <%}else{ 
+                
+                   for(int i=0;i<reviewList.size();i++){
+                %>
+             
+                     <ul id="review_ul">
+                     	<li>
+	                        <div id="date"><%=reviewList.get(i).getR_date()%></div>
+	                        <div id="id"><%=reviewList.get(i).getId() %></div>
+	                        <div id="r_star">
+                            	<span class="star-prototype"><%=reviewList.get(i).getM_star()%></span> 
+                            </div>
+                            <div id="comment"><%=reviewList.get(i).getM_review()%></div>
+                     		
+                     		<!--        비로그인 시 삭제버튼이 노출되지않음        -->
+			                    <%if(id == null) {%>
+				                    <div class="btn_regist2">
+				                    	<a href="movieReviewDelete.mo?r_num=<%=reviewList.get(i).getR_num()%>&m_id=<%=reviewList.get(i).getM_id()%>" onclick="return confirm('정말로 삭제하시겠습니까?')" >삭제</a>
+				                    </div>
+				                    
+				            <!--        관리자 계정 로그인 시 모든 리뷰와 평점 삭제버튼 노출        -->
+			                    <%}else if(id.equals("admin")) {%>
+			                        <div class="btn_regist">
+			                        	<a href="movieReviewDelete.mo?r_num=<%=reviewList.get(i).getR_num()%>&m_id=<%=reviewList.get(i).getM_id()%>" onclick="return confirm('정말로 삭제하시겠습니까?')" >삭제</a>
+			                        </div>
+			                        
+			                <!--        로그인 시(작성자와 로그인한 아이디가 동일할 경우 삭제버튼 노출        -->
+			                    <%}else if((id.equals(reviewList.get(i).getId()))) {%>
+			                        <div class="btn_regist">
+			                        	<a href="movieReviewDelete.mo?r_num=<%=reviewList.get(i).getR_num()%>&m_id=<%=reviewList.get(i).getM_id()%>" onclick="return confirm('정말로 삭제하시겠습니까?')" >삭제</a>
+			                        </div>
+			                    <%} %>
+                        </li>
+                     </ul>
+   
+                <% }
+                   }
+                %>
+                </div>
+
+            </section>
+```
