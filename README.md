@@ -2,6 +2,9 @@
 
 ## Front-End 기능
 > 더보기 버튼
+
+![gif6](https://user-images.githubusercontent.com/68000697/106428198-ed65f780-64ab-11eb-9d5c-525151fac105.gif)
+
 ```
 //더보기
 document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이벤트 리스너 등록
