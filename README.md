@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이�
 });
 ```
 
+
 > 영화 평점 체크
 
 ![gif7](https://user-images.githubusercontent.com/68000697/106428698-bc39f700-64ac-11eb-92d1-cc881f3d55e4.gif)
@@ -46,6 +47,7 @@ function chkchk (form){
 } 
 ```
 
+
 > 영화 평점을 숫자로 표현
 
 ![gif8](https://user-images.githubusercontent.com/68000697/106428933-120e9f00-64ad-11eb-8780-e7e093081c55.gif)
@@ -61,6 +63,7 @@ $('.rating').prepend(log);
 });
 ```
 
+
 > 네티즌 리뷰 부분에 출력되는 평점
 
 ![gif9](https://user-images.githubusercontent.com/68000697/106429680-1dae9580-64ae-11eb-9b60-9bc4fdce1246.gif)
@@ -74,6 +77,7 @@ $.fn.generateStars = function() {
 // 숫자 평점을 별로 변환하도록 호출하는 함수
 $('.star-prototype').generateStars();
 ```
+
 
 > 사진 슬라이드
 
@@ -116,6 +120,7 @@ function showSlides(n) {
 > 영화 리스트 페이징 처리
 
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
+
 
 > 관리자 영화등록
 
@@ -202,13 +207,16 @@ function showSlides(n) {
       return forward;
 ```
 
+
 > 영화상세페이지 조회
 
 ![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
 
+
 > 회원 영화 평점 및 리뷰 등록
 
 ![gif3](https://user-images.githubusercontent.com/68000697/105955782-253efa80-60ba-11eb-9267-e84e2529378b.gif)
+
 
 > 회원 영화 평점 및 리뷰 삭제
 
@@ -279,6 +287,8 @@ function showSlides(n) {
 
 </section>
 ```
+
+
 > 비밀번호 찾기
 
 ![gif11](https://user-images.githubusercontent.com/68000697/106439507-1c379a00-64bb-11eb-8d72-ec62ed664f7c.gif)
