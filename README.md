@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이�
 ```
 
 > 영화 평점 체크
+
+![gif7](https://user-images.githubusercontent.com/68000697/106428698-bc39f700-64ac-11eb-92d1-cc881f3d55e4.gif)
+
 ```
 //별점 체크
 function chkchk (form){ 
@@ -44,6 +47,9 @@ function chkchk (form){
 ```
 
 > 영화 평점을 숫자로 표현
+
+![gif8](https://user-images.githubusercontent.com/68000697/106428933-120e9f00-64ad-11eb-8780-e7e093081c55.gif)
+
 ```
 //별점 숫자로
 var logID = 'log',
@@ -56,6 +62,9 @@ $('.rating').prepend(log);
 ```
 
 > 네티즌 리뷰 부분에 출력되는 평점
+
+![gif9](https://user-images.githubusercontent.com/68000697/106429680-1dae9580-64ae-11eb-9b60-9bc4fdce1246.gif)
+
 ```
 //숫자 별점으로
 $.fn.generateStars = function() {
@@ -67,6 +76,9 @@ $('.star-prototype').generateStars();
 ```
 
 > 사진 슬라이드
+
+![gif10](https://user-images.githubusercontent.com/68000697/106429922-77af5b00-64ae-11eb-954f-84c5d70d5d38.gif)
+
 ```
 //슬라이드
 var slideIndex = 1;
