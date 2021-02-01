@@ -279,3 +279,7 @@ function showSlides(n) {
 
 </section>
 ```
+> 비밀번호 찾기
+
+![gif11](https://user-images.githubusercontent.com/68000697/106439507-1c379a00-64bb-11eb-8d72-ec62ed664f7c.gif)
+
