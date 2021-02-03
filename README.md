@@ -117,6 +117,14 @@ function showSlides(n) {
 
 > 리뷰를 작성한 아이디로 로그인한 경우와 관리자 계정으로  삭제 버튼 노출
 
+* 작성한 아이디로 로그인 한 경우
+
+![gif12](https://user-images.githubusercontent.com/68000697/106708167-c1767d80-6635-11eb-901c-97feec313bce.gif)
+
+* 관리자 계정으로 로그인 한 경우
+
+![gif13](https://user-images.githubusercontent.com/68000697/106708354-11554480-6636-11eb-82a8-74b37aa47cba.gif)
+
 ```
 <%
    request.setCharacterEncoding("UTF-8"); // 인코딩
