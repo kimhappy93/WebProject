@@ -1,5 +1,28 @@
 # 영화커뮤니티(MOVIEMOA) - 팀프로젝트
 
+## 기획 개요
+
+코로나 장기화에 따른 OTT 서비스 수요 급증했지만 영화를 주제로 이야기를 나눌 수 있는 커뮤니티는 부족하여 영화 관련 정보, 평점 및 리뷰, 이야기를 공유하는 커뮤니티 사이트 제작하였습니다.
+
+
+## 개발환경
+
+> Frontend 
+
+- Html, Css, JavaScript, Jquery
+
+> Backend
+
+- MySQL, Java, Servelets&Jsp
+
+> Tool 
+- Visual Studio, Eclipse, HeidiSQL, MySQL Workbench, GitHub, Sourcetree
+
+> WebServer
+
+- Apache Tomcat9.0
+
+
 ## Front-End 기능
 > 더보기 버튼
 
