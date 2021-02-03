@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이�
         } 
     });
 });
-```
-
----
+```  
 
 > 영화 평점 체크
 
