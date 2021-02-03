@@ -217,6 +217,37 @@ function showSlides(n) {
 
 ![gif3](https://user-images.githubusercontent.com/68000697/105955782-253efa80-60ba-11eb-9267-e84e2529378b.gif)
 
+```
+//영화 리뷰 및 평점 등록
+	public int insertMovieReview(MovieReviewBean movieReviewBean) {
+	      
+	      PreparedStatement pstmt = null;
+	      int insertCount = 0;
+	      String sql = "";
+	      
+	      try {
+	         sql = "insert into moviereview(id,m_id,m_star,m_review,r_date)"
+	               + "values(?,?,?,?,now())"; //작성일시는 now()함수 사용
+	         pstmt = con.prepareStatement(sql);
+	         
+	         pstmt.setString(1, movieReviewBean.getId());
+	         pstmt.setInt(2, movieReviewBean.getM_id());
+	         pstmt.setInt(3, movieReviewBean.getM_star());
+	         pstmt.setString(4, movieReviewBean.getM_review());
+	         
+	         
+	         insertCount = pstmt.executeUpdate();
+	         
+	      } catch (SQLException e) {
+	         e.printStackTrace();
+	      } finally {
+	         close(pstmt);
+	      }
+	      
+	      
+	      return insertCount;
+	   }
+```
 
 > 회원 영화 평점 및 리뷰 삭제
 
