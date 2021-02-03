@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이�
         } 
     });
 });
-```  
+```    
+<br>
 
 > 영화 평점 체크
 
@@ -46,7 +47,7 @@ function chkchk (form){
 } 
 ```
 
----
+<br>
 
 > 영화 평점을 숫자로 표현
 
@@ -63,7 +64,7 @@ $('.rating').prepend(log);
 });
 ```
 
----
+<br>
 
 > 네티즌 리뷰 부분에 출력되는 평점
 
@@ -79,7 +80,7 @@ $.fn.generateStars = function() {
 $('.star-prototype').generateStars();
 ```
 
----
+<br>
 
 > 사진 슬라이드
 
@@ -117,7 +118,7 @@ function showSlides(n) {
 }
 ```
 
----
+<br>
 
 > 리뷰를 작성한 아이디로 로그인한 경우와 관리자 계정으로  삭제 버튼 노출
 
@@ -196,7 +197,7 @@ function showSlides(n) {
 ```
 
 
-
+<br>
 
 ## Back-End 기능
 
@@ -204,7 +205,7 @@ function showSlides(n) {
 
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
----
+<br>
 
 > 관리자 영화등록
 
@@ -291,7 +292,7 @@ if(isRegistSucess) {
 return forward;
 ```
 
----
+<br>
 
 > 영화상세페이지 조회
 
@@ -335,7 +336,7 @@ public int insertMovieReview(MovieReviewBean movieReviewBean) {
    }
 ```
 
----
+<br>
 
 > 회원 영화 평점 및 리뷰 삭제
 
@@ -365,7 +366,7 @@ PreparedStatement pstmt = null;
 } 
 ```
 
----
+<br>
 
 > 비밀번호 찾기
 
@@ -414,6 +415,8 @@ if(res.equals("")) {
 return "../login/login.jsp"; //로그인 화면으로 이동
 }
 ```
+
+<br>
 
 * 이메일로 임시비밀번호 발송
 
