@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){ //DOM 생성 후 이�
 });
 ```
 
+---
 
 > 영화 평점 체크
 
@@ -47,6 +48,7 @@ function chkchk (form){
 } 
 ```
 
+---
 
 > 영화 평점을 숫자로 표현
 
@@ -63,6 +65,7 @@ $('.rating').prepend(log);
 });
 ```
 
+---
 
 > 네티즌 리뷰 부분에 출력되는 평점
 
@@ -78,6 +81,7 @@ $.fn.generateStars = function() {
 $('.star-prototype').generateStars();
 ```
 
+---
 
 > 사진 슬라이드
 
@@ -114,6 +118,8 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 ```
+
+---
 
 > 리뷰를 작성한 아이디로 로그인한 경우와 관리자 계정으로  삭제 버튼 노출
 
@@ -200,6 +206,7 @@ function showSlides(n) {
 
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
+---
 
 > 관리자 영화등록
 
@@ -286,11 +293,13 @@ if(isRegistSucess) {
 return forward;
 ```
 
+---
 
 > 영화상세페이지 조회
 
 ![gif2](https://user-images.githubusercontent.com/68000697/105954980-e3618480-60b8-11eb-8c86-2e4d635c587a.gif)
 
+---
 
 > 회원 영화 평점 및 리뷰 등록
 
@@ -328,6 +337,8 @@ public int insertMovieReview(MovieReviewBean movieReviewBean) {
    }
 ```
 
+---
+
 > 회원 영화 평점 및 리뷰 삭제
 
 ![gif4](https://user-images.githubusercontent.com/68000697/105955946-66370f00-60ba-11eb-8885-ed67e35fad21.gif)
@@ -356,6 +367,7 @@ PreparedStatement pstmt = null;
 } 
 ```
 
+---
 
 > 비밀번호 찾기
 
