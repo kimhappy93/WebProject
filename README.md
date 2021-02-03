@@ -324,3 +324,130 @@ function showSlides(n) {
 
 ![gif11](https://user-images.githubusercontent.com/68000697/106439507-1c379a00-64bb-11eb-8d72-ec62ed664f7c.gif)
 
+*임시비밀번호생성
+
+```
+public class PwFindProcCommand implements Command {
+
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		
+		String receiver = request.getParameter("email"); //사이트 회원 이메일주소
+		String receiver_id = request.getParameter("id"); //사이트 회원 아이디
+		String res = "";
+		
+		MemberDAO mdao = MemberDAO.getInstance();
+		
+		try {	
+			res = mdao.PwFind(receiver_id, receiver);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		//임시비밀번호에 들어갈 문자
+		String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghijklmnopqrstuvwxyz0123456789";
+		String pw = "";
+		
+		//for문을 이용하여 임시비밀번호 8글자 랜덤 생성
+		for(int i = 0; i< 8; i++) {
+			int n = (int)(Math.random() * ALPHA_NUMERIC_STRING.length());
+			pw += ALPHA_NUMERIC_STRING.charAt(n);
+		}
+		
+		if(res.equals("")) {
+			request.setAttribute("pwfind", "fail");
+		}else {
+			try {
+				mdao.updateSecondPw(pw,receiver_id);
+				
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+			SendMail smail = SendMail.getInstance();
+			smail.sendMail(receiver, receiver_id, pw);
+			request.setAttribute("pwfind", receiver);
+		}
+		
+	      return "../login/login.jsp"; //로그인 화면으로 이동
+	}
+}
+```
+
+*이메일로 임시비밀번호 발송
+
+```
+public class SendMail {
+
+	private static SendMail smailInst = new SendMail();
+	
+	private SendMail() {}
+	
+	public static SendMail getInstance() {
+		return smailInst;
+	}
+	
+	//보내는 사람 이메일 이름
+	static final String FROM = "MOVIEMOA";
+	static final String FROMNAME = "무비모아";
+	
+	//보내는 사람 이메일 아이디와 비밀번호
+	static final String SMTP_USERNAME = "kimhappy93@gmail.com";
+	static final String SMTP_PASSWORD = "rladbal1!";
+	
+	static final String HOST = "smtp.gmail.com";
+	static final int PORT = 587;
+	
+	//이메일 제목
+	static final String SUBJECT = "임시비밀번호 메일입니다.";
+	
+	//받는 사람의 사이트 아이디와 임시비밀번호
+	public void sendMail(String receiver, String receiver_id, String pwd) {
+		
+		//이메일 받는 사람
+		String to = receiver;
+		
+		//이메일 내용
+		String body = String.join(
+				System.getProperty("line.separator"),
+				"<p>안녕하세요 " + receiver_id + "님</p>",
+				"<p>회원님의 임시 비밀번호는 ["+pwd+"]입니다. </p>",
+				"<p>로그인을 완료하신뒤 비밀번호를 변경해주세요.</p>"
+				);
+		
+		Properties props = System.getProperties();
+		props.put("mail.transport.protocol", "smtp");
+		props.put("mail.smtp.port", PORT);
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.auth", "true");
+		Transport transport = null;
+		Session session = Session.getDefaultInstance(props);
+		
+		MimeMessage msg = new MimeMessage(session);
+		try {
+			msg.setFrom(new InternetAddress(FROM, FROMNAME));
+			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			msg.setSubject(SUBJECT);
+			msg.setContent(body, "text/html;charset=utf-8");
+			
+			transport = session.getTransport();
+		}catch(UnsupportedEncodingException | MessagingException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			transport.connect(HOST, SMTP_USERNAME, SMTP_PASSWORD);
+			transport.sendMessage(msg, msg.getAllRecipients());
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}finally {
+			try {
+				if(transport != null)
+					transport.close();
+			}catch(MessagingException e){
+				e.printStackTrace();
+			}
+		}
+	}
+}
+```
+
