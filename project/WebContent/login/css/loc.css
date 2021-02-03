@@ -1,0 +1,133 @@
+#main, #nav{
+    background-color: snow;
+}
+
+#theater{
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+#loc_title{
+    margin: 70px 0 10px 115px;
+    position: relative;
+}
+
+.loc_table{
+    border-collapse: collapse;
+}
+
+/*
+.loc_table tr:nth-child(1){
+    background-color: beige;
+}
+*/
+
+.loc_name{
+    cursor: pointer;
+    height: 50px;
+}
+
+.loc_name > td:hover{
+    text-decoration: underline;
+}
+
+#the{
+    margin: 40px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.theater_list{
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.theater_list > thead > tr:first-of-type{
+    background: bisque;
+    height:50px;
+    font-size: 16px;
+    font-weight: bold    
+}
+
+.theater_list td:first-of-type{
+    width:300px;      
+}
+
+td{
+    height: 30px;
+    text-align: center;
+}
+
+#the_info{
+    margin: 60px;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.info_name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info_list{
+    margin: 5px 0;
+    text-align: right;
+    position:relative;
+    right: 110px;
+    font-size: 14px;
+    text-decoration: underline;
+    color:dimgray;
+    cursor: pointer;
+}
+
+#info_table{
+    border-collapse: collapse;
+}
+
+#info_table td:first-of-type{
+    background: #F9F3EE;
+    width:170px;
+    height: 40px;
+    font-size: 17px;   
+}
+
+#info_table td:nth-child(2){
+    background-color:white;
+    font-size: 15px;
+}
+
+#info_table a:hover{
+    text-decoration: underline;
+}
+
+#map{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

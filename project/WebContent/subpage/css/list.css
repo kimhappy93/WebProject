@@ -1,0 +1,339 @@
+/*占쎈／占쎈쐝�뵳怨ㅼ삕占쎈꼨占쎄턀�겫�뼔援� */
+wrap {
+    margin: 0;
+    padding: 0;
+}
+
+/* �뇦猿딆뒩占쎈뻣�뜝�럥�냷 �뜝�럩寃ュ뜝�럥�뿴 */
+.container .boardListWrap {
+    flex-basis: 1200px;  width: 1200px;
+    margin: 0; padding: 50px;
+    flex-grow: 0; flex-shrink: 0;
+}
+
+.container .boardListWrap .sub_tit_wrap { display: inline-block; width:235px; height:50px; margin-top : 30px;}
+.container .boardListWrap .sub_tit_wrap2 { display: inline-block; width:500px; height:60px; margin-top : 30px;}
+
+.contit { font-size: 45px; font-weight: 500; margin-right :15px; }
+.container .boardListWrap .sub_tit_wrap2 p {  line-height: 3px;}
+
+/* �뇖�궠�샑占쎈�ㅿ옙�뫁伊볩옙遊� �뜝�럩寃ュ뜝�럥�뿴 */
+.category .categoryTab { list-style: none; font-size: 0; margin-bottom: 1px; }
+
+.categoryTab li {
+    display: inline-block; margin: 3px 0px 10px 3px; padding : 0px 8px;
+    color: white; font-weight: 500;
+    border-right : 1px solid #cccccc;
+}
+
+.categoryTab li a:hover{
+	color : #cccccc;
+}
+
+
+.categoryTab li a {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 3px 10px;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+.categoryTab li .categoryOn{
+/*     padding: 5px 17px 0px 17px;
+    line-height: 38px;
+    font-size: 16px; */
+}
+
+
+/* �뜝�럥堉꾢뜝�럩�젷 �뇦猿딆뒩占쎈뻣�뼨�먯삕 �뜝�럩寃ュ뜝�럥�뿴 */
+.boardList { 
+    width: 1200px;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+/* �뇖�궠�샑占쎈�ㅿ옙�뫁伊볩옙遊븀솻洹⑥삕 �뼨��梨뤄옙逾� �뜝�럡�맟�뜝�럩�젧 */
+.boardList thead th:first-child { width: 50px; }
+.boardList thead th:nth-child(2) { width: 90px; }
+.boardList thead th:nth-child(3) { width: 440px; }
+.boardList thead th:nth-child(4) { width: 140px; }
+.boardList thead th:nth-child(5) { width: 80px; }
+.boardList thead th:nth-child(6) { width: 60px; }
+
+/* .boardList thead tr { background: #f0ebe7; } */
+
+.boardList tr {
+    border-bottom: 1px solid #dddddd;
+    height: 45px;
+}
+
+.boardList tr:last-child {
+    border : none;
+}
+
+.boardList th, .boardList td { padding: 12px 5px; }
+
+.boardList td { text-align: center; }
+
+.boardList .boardContent tr:first-child { border-top: 2px solid #cccccc; }
+
+.boardList tbody tr:hover {
+    transition-property: background-color;
+    background: #F6F6F6;
+}
+
+
+/*�뜝�럥�뿰�뼨�먯삕*/
+.boardList tbody tr td:nth-child(2) a {
+    background: #5F5F5F;
+    display: block;
+    border-radius: 1px;
+    height: 30px;
+    width: 60px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+
+.boardList tbody tr td:nth-child(3) a {
+/*    �뼨�먯삕 �뜝�럩�젷嶺뚮쪋�삕 �뜝�럩�눁嶺뚯옚�삕 �뜝�럩�젧�뜝�럩議� */
+    text-align: left;
+    text-indent: 15px;
+    display: inline-block;
+    width: 480px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.boardList tbody tr td:nth-child(4) .writer {
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.boardList tbody tr td:nth-child(3):hover { color: #ef4e04; }
+
+
+/* 寃뚯떆湲��씠 �뾾�쓣 寃쎌슦 */
+.boardList .nonBoard {
+	padding : 120px 0;
+}
+
+.boardList .nonBoard:hover {
+	background: white;
+}
+
+/* �뇦猿볦삕�뜝�럡�돰�뜝�럥夷�, �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕 占쎈뎨占쎈봾裕욃뜝�럥諭� �뜝�럩寃ュ뜝�럥�뿴 */
+.pageList {
+/*    background: #d8dcda;*/
+    margin: 30px 0px 15px 0px;
+}
+
+.pagination{
+    text-align: center; font-size: 0;
+    margin: auto;
+}
+
+.pagination, .pagination li { list-style: none; }
+
+
+.pagination li {
+    border: 1px solid #dddddd;
+    display: inline-block; vertical-align: middle;
+}
+
+
+/* �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕 �뵓怨뚯뫓占쎈괏 */
+.pagination li .prev,
+.pagination li .next {
+    display: block; width: 25px; height: 25px;
+    overflow: hidden;
+    color: transparent; /* �뼨�먯삕�뜝�럥�럞 �뜝�럥�뼫嶺뚮ㅏ援욑옙紐드슖�댙�삕 嶺뚮씭�뒧獄��씛�삕占쎈츎 �뜝�럡臾뜹윜諭꾩삕 */
+    background: no-repeat center;
+}
+
+.pagination li .prev { background-image: url(../imges/previcon.png); background-size: 20px; }
+.pagination li .next { background-image: url(../imges/nexticon.png); background-size: 20px; }
+
+.pagination li:first-child { margin-right: 6px; }
+.pagination li:last-child { margin-left: 6px; }
+
+.pagination li a {
+    color: #424242; text-shadow: 1px 0px 5px #f1eeed;
+    font-size: 13px;
+    display: block; width: 25px; height: 25px;
+    line-height: 25px;
+}
+
+ /* �뜝�럩寃긷뜝�럩�궨 �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕�뜝�럩逾у뜝�럥瑜� a:hover �뜝�럩�뮒占썩뫅�삕 �뜝�럩�쓤�뜝�럩�뮔 */
+.pagination li a:hover { color: #ef4e04; text-decoration: underline; }
+.pagination li .pageNum:hover { background: #eee; }
+
+
+/* �뼨�먯삕�뜝�럡�뀭�뜝�럩�젷, �뼨�먯삕�뜝�럥苡븀뼨�먯삕 �뵓怨뚯뫓占쎈괏 �뜝�럥�뱺�뜝�럥�꽑占쎈뎨占쎈봾�꽑 */
+.btn_area { position: relative; height: 40px; }
+
+/* �뼨�먯삕�뜝�럥苡븀뼨�먯삕, �뜝�럡���뤆�룊�삕 �뜝�럥荑� �뼨�먯삕 */
+.btn_area .btn_side_area { float: right; }
+
+.btn_area .btn_side_area a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0px 7px;
+    background: white;
+    border-radius: 1px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 1px 1px 4px #dddddd;
+    
+    color: #424242;
+    font-weight: 400;
+}
+
+.btn_area .btn_side_area a:nth-child(2) { color: white; background: #444; }
+.btn_area .btn_side_area a:nth-child(2):hover {
+    background: #333;
+}
+.btn_area .btn_side_area a:nth-child(1):hover {
+    border: 1px solid #949494;
+    color: gray;
+}
+
+.btn_area .btn_side_area2 {
+	visibility: hidden;
+}
+
+.btn_area .btn_delete_message {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 0px 7px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 1px 1px 4px #dddddd;
+    color: #424242;
+    font-weight: bold;
+}
+
+.btn_area .btn_delete_message:hover {
+    border: 1px solid #555;
+    transition-property: border;
+    transition-duration: 0.4s;
+    border: 1px solid #888;
+    color: gray;
+}
+
+.btn_area .btn_img { width:15px; height: 15px; margin-right: 5px; vertical-align: text-bottom;}
+
+.btn_area span { font-size: 12px; }
+
+
+/*�뇦猿볦삕�뜝�럡�돰 �뜝�럩寃ュ뜝�럥�뿴 */
+.search_area { height: 35px; margin-top: 10px; text-align: center; position: relative;}
+
+/* �뇖�궠�샑占쎈�ㅿ옙�뫁伊볩옙遊� 嶺뚯쉻�삕�뜝�럩�젧*/
+.search_area .serch_category {
+    width: 70px; height: 35px;
+    color: #424242;
+    float: left;
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    margin-right: 10px;
+    padding-left: 7px;
+    background: white;
+}
+
+.search_area .serch_category:focus {
+    outline: none;
+}
+
+
+/* �뜝�럥堉꾢뜝�럩�젷 �뇦猿볦삕�뜝�럡�돰 占쎈슓維귨옙���럹�뜝占�*/
+.search_area fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: #fff;
+    border: none;
+}
+
+.search_area .inputSearch,
+.search_area .btn_search {
+    width: 200px; height: 35px;
+    display: inline-block; float: left;
+}
+
+.search_area .inputSearch {
+    color: #666;
+    padding: 0px 10px;
+    border: none;
+    z-index: 2;
+}
+
+.search_area .inputSearch:focus {
+    outline: none;
+    border: 1px solid #dddddd;
+}
+
+.inputSearch:focus + .btn_search {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.search_area .inputSearch:focus + .btn_search .fa {
+    -webkit-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: #fff;
+}
+
+.search_area .btn_search {
+    z-index: 1;  
+    width: 40px;
+    border: none;
+    background: #dddddd;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;  
+
+  -webkit-transform: translate(-50px, 0);
+      -ms-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.search_area .btn_search .fa-search {
+    font-size: 1.4rem;
+    color: #29abe2;  z-index: 3;  top: 25%; 
+    -webkit-transform: translate(-190px, 0); 
+    -ms-transform: translate(-190px, 0);
+    transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.search_area .btn_search .fa-search:before {
+    content: '';
+    background-image: url(../imges/magnifiericon.svg);
+    display: inline-block;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}

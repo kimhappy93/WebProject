@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>
+            MOVIE
+        </title>
+        <link rel="stylesheet" href="css/write.css?ver=1.1">
+        <link rel="stylesheet" href="css/boardcommon.css">
+        <link rel="stylesheet" href="css/common.css">
+        <script src="css/common.js"></script> 
+        <script src="css/slide.js"></script> 
+    </head>
+    <body>
+        
+         <header id="header">
+              <a href="../main.jsp"><h1 class="title">MOVIE</h1></a>
+              <a href="login.jsp"><button type="button" class="login">로그인</button></a>
+              <a href="member.jsp"><button type="button" class="login">회원가입</button></a>
+              <input type="search" id="search" class="login" placeholder="검색어를 입력" onkeyup="">
+         </header>
+         <nav id="nav">
+                  <a href="movieList.mo"><span class="btn">영화</span></a>
+                  <a href="subpage/boardList.bo"><span class="btn">리뷰</span></a>
+                  <span class="btn" onclick="board_3()">읽을거리</span>
+                  <span class="btn" onclick="loc()">극장</span> 
+         </nav>
+        
+        <div class="wrap">
+<!--            wrap flex item 1-->
+<!--          미사용 헤더 -->
+<!--
+            <div class="subHeader_area">
+                <ul class="subHeader">
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 영화 토크 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 현영씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 승호씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> ?? </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+-->
+        
+<!--            wrap flex item 2-->
+            <div class="container">
+<!--            광고1-->
+                <div class="ad_1"></div>
+                
+                <div class="writeWrap">
+                    <h1 class="contit"> <span>T</span>ALK PLACE</h1>
+                    <h2 class="contsubtit"> 자유롭게 이야기를 나누는 공간입니다.</h2>
+                    
+<!--                    실제 글쓰기 영역-->
+                    <div class="writeArea">
+                        <form id="postFrm" action="boardWritePro.bo" method="post" enctype="multipart/form-data">
+                        	<input type = "hidden" name = "ID" value = "<%=id%>"/>
+                            <fieldset>
+                                <legend>글쓰기</legend>
+                                <table>
+                                    <caption>글쓰기</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="subject"><span>카테고리</span></label></th>
+                                            <td>
+                                                <select name="MOVIE_GENRE" class="category">
+                                                    <option value="">선택</option>
+                                                    <option value="영화">영화</option>
+                                                    <option value="잡담">잡담</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="subject"><span>제목</span></label></th>
+                                            <td><input type="text" name="MOVIE_SUBJECT" id="subject" placeholder="제목을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력하세요.'"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><span>내용</span></th>
+                                            <td>
+                                                <div class="textAreaWrap">
+                                                    <textarea class="txtEdit" name="MOVIE_CONTENT" placeholder="내용을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='내용을 입력하세요.'"></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+<!--                                        사진/파일 업로드 -->
+                                        <tr>
+                                            <th><span>사진</span></th>
+                                            <td>
+                                                <div class="file_box">
+                                                    <input class="upload_name" value="이미지를 업로드 하세요." disabled="disabled">
+                                                    <input name="BOARD_FILE" type="file"id="BOARD_FILE"/>
+                                                    <!-- <label for="input_file"><img src="imges/link.svg" alt="파일 찾기"></label> 
+                                                    <input type="file" id="input_file" class="file_hidden">  -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+<!--                                게시하기, 글쓰기 취소-->
+                                <div class="btnArea">
+                                    <button type="submit" class="wbtn"><span>등록</span></button>
+                                    <a onclick="return confirm('페이지를 벗어나면 작성된 내용이 사라집니다.')" href="boardList.bo" class="wbtn">취소</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+                
+        
+<!--                wrap flex item 3-->
+                <!--                시간 -->
+                <div class="time_area">
+                    <p>현재 시각은…</p>
+                    <div class="time_img"></div>
+                    <div class="timeNotice">
+                        <span class="realtime">「」</span> <br>
+                        <span class="genre">공포 </span>
+                        <span class="genre_ment">영화 보기 좋은 시간!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="footer">
+            copyright@
+        </div>
+    </body>
+</html>

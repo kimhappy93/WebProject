@@ -1,0 +1,421 @@
+ body{
+    padding:0;
+    margin:0;
+ }
+          
+ #wrapper{
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+
+ul,li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#333;
+}
+
+
+/*
+a:link, a:visited{
+    color: #646464;
+}
+*/
+
+
+
+
+/*      헤더      */
+
+#header{
+    position: relative;
+     width: 100%;
+    height: 85px;
+    background-color: #50403f;
+    margin: 0 auto;
+    text-align: right;
+}
+             
+.title{
+     position: absolute;
+     left:100px;
+    color: antiquewhite;
+    cursor: pointer;
+    
+}
+          
+.login{
+    position: relative;
+    right: 40px;
+    border-style: none;
+    background-color: #50403f;
+    margin: 5px;
+    color:antiquewhite;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+#search{
+    border-bottom: 1px solid white;
+}
+
+
+
+/*      네비게이션       */
+            
+#nav{
+    position: relative;
+    width:100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    background-color:#EBEBEB;
+    text-align: right;
+}
+          
+.btn{
+    position: relative;
+    right: 175px;
+    top:7px;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    font-family:'Nanum Gothic','맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+    font-weight: bold;
+    color:#5F5F5F;
+    font-size: 16px;
+}
+
+.btn:before{
+    content: "|";
+    padding-right: 15px; 
+    font-weight: normal;
+    color: #5F5F5F;
+}
+
+#nav span:nth-child(1):before{
+    content: "";
+}
+
+.btn:hover{
+    text-decoration: underline;
+}
+          
+
+/*      메인   */
+          
+#main{
+    position: relative;
+    width: 980px;        
+    background-color: #EBEBEB;
+    margin: 0 auto;
+}
+
+#section, #section2{
+    display: inline-block;
+    width: 410px;
+    height: 320px;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    background-color:whitesmoke;
+}
+
+.w_title{
+    display: inline-block;
+    margin: 10px;
+    padding: 7px 12px;
+    border: 1px solid lightgray;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+.w_plus{
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    bottom: 17px;
+    color:slategray;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.w_plus:hover{
+    filter: invert(100%);
+}
+
+.w_content{
+    display: inline-block;
+    font-size: 13px;
+    
+}
+
+._ul{
+    padding: 0;
+}
+
+.list_unit{
+    display: table;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.list_unit > li{
+    display: table-row;
+    position: relative;
+    margin-bottom: 6px;
+    line-height: 17px;
+    
+}
+
+.list_unit > li > span{
+    display: table-cell;
+    padding: 0 0 5px 10px;
+    vertical-align: middle;
+    
+}
+
+.rank:hover{
+    text-decoration: underline;
+}
+
+
+.rank_wrap{
+    width: 5%;
+}
+
+.rank_list{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+.page1 li:first-child .rank_list{
+    background-color: #c14c3d;
+    border-color:  #c14c3d; 
+    color: #fff;
+}
+
+.page1 li:nth-child(2) .rank_list{
+    background-color:cadetblue;
+    border-color: cadetblue;
+    color: #fff;
+}
+
+.page1 li:nth-child(3) .rank_list{
+    background-color: black;
+    border-color: black;
+    color: #fff;
+}
+
+.main_title{
+    line-height: 160%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#section3{
+    width:900px;
+    height: 405px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 30px;
+    margin-top:45px;
+    padding: 8px;
+}
+
+.m_banner{
+    display: inline-block;
+    margin: 14px;
+    padding: 7px 12px;
+    border: 1px solid lightgray;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+.post_view{
+    display: block;
+    overflow: hidden;
+    padding: 17px 0 30px;
+}
+
+/*
+#view2{
+    display: none;
+}
+
+.prev{
+    content: url(images/prev.png);
+    font-size: 0;
+    position: absolute;
+    right: 855px;
+    top:85px;
+}
+
+.prev:hover, .next:hover{
+    filter:invert(100%);
+}
+
+.next{
+    content: url(images/next.png);
+    font-size: 0;
+    position: absolute;
+    left:855px;
+    top:85px;
+}
+*/
+
+.post_area{
+    cursor: pointer;
+}
+
+.post_view  .post_area{
+    float: left;
+    margin-left: 22px;
+    text-decoration: none;
+}
+
+.post_info{
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.m_title{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+
+.m_rank{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+.m_list{
+    display: block;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.m_dt{
+    float: left;
+    margin-right:8px;
+}
+
+#section4{
+    width:900px;
+    display: inline-block;
+    border-top:2px solid lightgray;
+    margin: 50px 25px 85px; 
+    padding-top: 30px;
+}
+
+
+.news_list > li{
+    position: relative;
+    min-height: 145px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.news_thumb{
+    float: left;
+    margin-right: 20px;
+}
+
+
+.news_text:hover{
+    text-decoration: underline;
+}
+
+.news_title{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.news_content{
+    color: #666;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news_plus{
+    text-align: center;
+    padding: 10px;
+}
+
+.news_plus a{
+    color: slategray;
+    font-size: 13px;
+    text-decoration: underline;
+    letter-spacing: 1px; 
+}
+
+
+
+
+/*      푸터      */
+         
+#footer{     
+    width: 85%;
+    height: 65px;
+    margin: 0 auto;
+    background-color: #d8dcda;  
+    text-align: center;
+    color:darkslateblue;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+
+
+
+/*  사이드슬라이드    */
+
+
+
+#side > ul > li > img{
+    position: absolute;
+    top:-16px;
+    overflow: hidden;
+}
+
+#side{
+    position: relative;
+    right: 170px;
+    top:130px;
+    width: 220px;
+    height: 700px;
+    border: 1px solid;
+    float: right;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+

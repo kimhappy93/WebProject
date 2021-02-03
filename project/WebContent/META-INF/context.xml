@@ -1,0 +1,13 @@
+<Context>
+	<Resource
+		name="jdbc/MySQLDB"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="root"
+		password="1234"
+		driverClassName="org.gjt.mm.mysql.Driver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		url="jdbc:mysql://localhost:3306/moviedb?useSSL=false"
+		maxActive="500"
+	/>
+</Context>

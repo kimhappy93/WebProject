@@ -1,0 +1,94 @@
+#listForm{
+		width:980px;
+		margin:0 auto;
+	}
+
+table{
+	margin: 0 auto;
+	width:980px;
+}
+
+#hi{
+	position: relative;
+	right:50px;
+	margin:5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: antiquewhite;
+	cursor: default;
+	}
+
+#news_subject{
+	display:block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 300px;
+    margin: 0;
+}
+
+
+/*  硫붿씤  */
+
+#s_title{
+    padding: 50px 0 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin:0;
+}
+
+#s_title:after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 3px;
+    margin: 35px auto 0 auto;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.pageList {
+/*    background: #d8dcda;*/
+    margin: 30px 0;
+}
+
+.pagination{
+    text-align: center; font-size: 0;
+    margin: auto;
+}
+
+.pagination, .pagination li { list-style: none; }
+
+
+.pagination li {
+    border: 1px solid #dddddd;
+    display: inline-block; vertical-align: middle;
+}
+
+
+/* �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕 �뵓怨뚯뫓占쎈괏 */
+.pagination li .prev,
+.pagination li .next {
+    display: block; width: 25px; height: 25px;
+    overflow: hidden;
+    color: transparent; /* �뼨�먯삕�뜝�럥�럞 �뜝�럥�뼫嶺뚮ㅏ援욑옙紐드슖�댙�삕 嶺뚮씭�뒧獄��씛�삕占쎈츎 �뜝�럡臾뜹윜諭꾩삕 */
+    background: no-repeat center;
+}
+
+.pagination li .prev { background-image: url(/images/previcon.png); background-size: 20px; }
+.pagination li .next { background-image: url(/images/nexticon.png); background-size: 20px; }
+
+.pagination li:first-child { margin-right: 6px; }
+.pagination li:last-child { margin-left: 6px; }
+
+.pagination li a {
+    color: #9b7f72; text-shadow: 1px 0px 5px #f1eeed;
+    font-size: 13px;
+    display: block; width: 25px; height: 25px;
+    line-height: 25px;
+}

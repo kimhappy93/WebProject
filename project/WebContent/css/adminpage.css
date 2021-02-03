@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* 상단 탭 영역 */   
+  #sidebar {
+    position: relative;
+    top:0;
+    width: 100%;
+    text-align: center;
+    background-color: #f3f3f3;
+    z-index: 999;
+}
+
+.sub_tab ul{
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.sub_tab ul li:nth-child(1){
+	padding:0;
+	cursor:pointer;
+}
+
+.sub_tab ul li{
+	display: inline-block;
+	padding: 20px 13px;
+}
+
+.sub_tab ul li span{
+	padding: 0 10px;
+	text-decoration: none;
+	color: #222;
+	cursor: pointer;
+}
+
+/* 공지사항 메인페이지 */
+#admin_content{
+	width: 700px;
+	margin: 0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	border-top:1px solid #999;
+}
+
+.admin_info{
+	border-bottom:1px solid #999;
+	padding-bottom:20px;
+}
+
+ 
+/* 공지사항 등록 영역 */  
+legend { position: absolute; top: 0; left: 0; width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; visibility: hidden; }   
+fieldset { border: none; }
+
+
+.writeArea table {
+	width: 1000px;
+    margin: 0 auto;
+    padding-bottom:20px;
+    }
+    
+.writeArea table tbody tr { border-bottom : 1px solid #c7c7c7; }
+
+.writeArea table tbody tr th,
+.writeArea table tbody tr td {
+    padding: 25px 25px 20px 0px;
+}
+
+.writeArea table tbody tr th{
+	background-color:#f3f3f3;
+}
+
+.writeArea table tbody tr th span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.writeArea table tbody .category {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left:10px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+}
+
+.writeArea table .textAreaWrap .txtEdit {
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    margin-left:10px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    color: #555;
+    font-size: 12px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.writeArea table tbody #subject {
+    width: 850px;
+    height: 30px;
+    margin-left:10px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}    
+    
+.writeArea form .btnArea {
+    text-align: center;
+    padding: 5px 30px 10px 15px;
+}    
+
+.writeArea form .btnArea .wbtn {
+  	margin:5px;
+	padding: 8px;
+	border:1px solid #555;
+	background-color:#333;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	cursor: pointer;
+}
+
+a{text-decoration: none;}
+    
+
+   	
+/* 영화, 뉴스 등록 영역 */
+	#registForm{
+		width:100%;
+	}
+  
+   h2{
+   	 margin-top:50px;
+      text-align: center;
+   }
+   table{
+   width: 700px;
+   margin:0 auto;
+   padding-bottom:180px;
+   border-top:1px solid #999;   
+   }
+   
+   tr, td{
+    padding: 12px;
+	border-bottom:1px solid #999;
+   }
+      
+   .td_left{
+      width: 80px;
+      border-right:1px solid #f3f3f3;
+      background-color:#f3f3f3;
+   }
+   .td_right{
+      width: 270px;
+
+   }
+   #commandCell{
+      text-align: center;
+   }
+   
+   #commandCell input{
+   	margin:5px;
+	padding: 8px;
+	border:1px solid #555;
+	background-color:#333;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	cursor: pointer;
+   }
+   
+   
+   
+   
+   

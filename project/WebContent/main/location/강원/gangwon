@@ -1,0 +1,30 @@
+ <table border="1" width="650" height="230" align="center" class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>강릉시 영상미디어센터</td>
+                        <td>강릉시</td>
+                        <td>033-640-4961</td>
+                        <td><button type="button"><a href="location/강원/gw_1.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>강릉독립예술극장 신영</td>
+                        <td>강릉시</td>
+                        <td>033-645-7415</td>
+                        <td><button type="button"><a href="location/강원/gw_2.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>원주 영상미디어센터</td>
+                        <td>원주시</td>
+                        <td>033-733-8020</td>
+                        <td><button type="button"><a href="location/강원/gw_3.jsp">상세보기</a></button></td>
+                    </tr>
+                </thead>
+            </table>    

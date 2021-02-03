@@ -1,0 +1,73 @@
+<table border="1" width="650" height="550" align="center" class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>동성아트홀</td>
+                        <td>대구광역시</td>
+                        <td>053-425-2845</td>
+                        <td><button type="button"><a href="location/경상/gs_1.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>대구 오오극장</td>
+                        <td>대구광역시</td>
+                        <td>053-629-4424</td>
+                        <td><button type="button"><a href="location/경상/gs_2.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>롯데시네마 광복 아르떼클래식</td>
+                        <td>부산광역시</td>
+                        <td>1544-8855</td>
+                        <td><button type="button"><a href="location/경상/gs_3.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>롯데시네마 센텀시티 아르떼클래식</td>
+                        <td>부산광역시</td>
+                        <td>1544-8855</td>
+                        <td><button type="button"><a href="location/경상/gs_4.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 서면 아트하우스</td>
+                        <td>부산광역시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/경상/gs_5.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>영화의전당</td>
+                        <td>부산광역시</td>
+                        <td>051-780-6000</td>
+                        <td><button type="button"><a href="location/경상/gs_6.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>모퉁이 극장</td>
+                        <td>부산광역시</td>
+                        <td>051-465-1895</td>
+                        <td><button type="button"><a href="location/경상/gs_7.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>안동 중앙시네마</td>
+                        <td>경북 안동시</td>
+                        <td>054-854-5500</td>
+                        <td><button type="button"><a href="location/경상/gs_8.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>김해 문화의전당</td>
+                        <td>경남 김해시</td>
+                        <td>055-320-1234</td>
+                        <td><button type="button"><a href="location/경상/gs_9.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>씨네아트 리좀</td>
+                        <td>경남 창원시</td>
+                        <td>070-8802-6438</td>
+                        <td><button type="button"><a href="location/경상/gs_10.jsp">상세보기</a></button></td>
+                    </tr>
+                    
+                </tbody>
+         </table>    

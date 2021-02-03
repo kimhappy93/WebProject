@@ -1,0 +1,66 @@
+<table border="1" align="center" width="680" height="550"  class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>롯데시네마 주엽 아르떼클래식</td>
+                        <td>고양시</td>
+                        <td>1544-8855</td>
+                        <td><button type="button"><a href="location/경기/gg_1.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>메가박스 백석</td>
+                        <td>고양시</td>
+                        <td>1544-0070</td>
+                        <td><button type="button"><a href="location/경기/gg_2.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>고양 영상미디어센터</td>
+                        <td>고양시</td>
+                        <td>031-960-9752</td>
+                        <td><button type="button"><a href="location/경기/gg_3.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 소풍 아트하우스</td>
+                        <td>부천시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/경기/gg_4.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>성남 영상미디어센터</td>
+                        <td>성남시</td>
+                        <td>031-724-8370</td>
+                        <td><button type="button"><a href="location/경기/gg_5.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 오리 아트하우스</td>
+                        <td>성남시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/경기/gg_6.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 동수원 아트하우스</td>
+                        <td>수원시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/경기/gg_7.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>메가박스 영통</td>
+                        <td>수원시</td>
+                        <td>1544-0070</td>
+                        <td><button type="button"><a href="location/경기/gg_8.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>오산시 문화예술회관</td>
+                        <td>오산시</td>
+                        <td>031-378-4255</td>
+                        <td><button type="button"><a href="location/경기/gg_9.jsp">상세보기</a></button></td>
+                    </tr>
+                </tbody>
+         </table>    

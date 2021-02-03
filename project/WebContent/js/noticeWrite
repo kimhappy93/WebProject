@@ -1,0 +1,47 @@
+<div class="writeArea">
+	<h2>공지사항 등록</h2>
+                        <form id="postFrm" name="postFrm" action="boardWritePro.bo" method="post" enctype="multipart/form-data" onsubmit="return check()">
+                        	<input type = "hidden" name = "ID" value = "관리자"/>
+                            <fieldset>
+                                <legend>글쓰기</legend>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="subject"><span>카테고리</span></label></th>
+                                            <td>
+                                            	
+                                                <select name="MOVIE_GENRE" class="category">
+                                                    <option value="">선택</option>
+                                                    <option value="NOTICE">공지사항</option>
+                                                    <option value="MOVIE">영화</option>
+                                                    <option value="FREE">잡담</option>
+                                                </select>                                            	
+                                            	
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="subject"><span>제목</span></label></th>
+                                            <td><input type="text" name="MOVIE_SUBJECT" id="subject" placeholder="제목을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력하세요.'"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><span>내용</span></th>
+                                            <td>
+                                                <div class="textAreaWrap">
+                                                    <textarea class="txtEdit" name="MOVIE_CONTENT" placeholder="내용을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='내용을 입력하세요.'"></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+<!--                                        사진/파일 업로드 -->
+                                      
+                                    </tbody>
+                                </table>
+                                
+<!--                                게시하기, 글쓰기 취소-->
+                                <div class="btnArea">
+                                    <button type="submit" class="wbtn"><span>등록</span></button>
+                                    <a onclick="return confirm('페이지를 벗어나면 작성된 내용이 사라집니다.')" href="boardList.bo" class="wbtn">취소</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>

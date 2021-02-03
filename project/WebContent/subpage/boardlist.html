@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>
+            MOVIE
+        </title>
+        <link rel="stylesheet" href="css/boardcommon.css">
+        <link rel="stylesheet" href="css/common.css">
+        <script src="css/common.js"></script> 
+        <link rel="stylesheet" href="css/list.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="css/board.js"></script> 
+    </head>
+    <body>
+        
+        <header id="header">
+              <h1 class="title" onclick="main()">MOVIE</h1>
+              <button type="button" class="login" onclick="login()">로그인</button>
+              <button type="button" class="login" onclick="join()">회원가입</button>
+              <input type="search" id="search" class="login" placeholder="검색어를 입력" onkeyup="">
+        </header>
+        <nav id="nav">
+<!--                  <span class="btn" onclick="board_1()">영화</span>-->
+            <span class="btn" onclick="board_2()">리뷰</span>
+            <span class="btn" onclick="board_3()">읽을거리</span>
+            <span class="btn" onclick="loc()">극장</span> 
+        </nav>
+        
+        <div class="wrap">
+<!--            wrap flex item 1-->
+            
+<!--          미사용 헤더 -->
+<!--
+            <div class="subHeader_area">
+                <ul class="subHeader">
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 영화 토크 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 현영씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 승호씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> ?? </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+-->
+        
+<!--            wrap flex item 2-->
+            <div class="container">
+<!--            광고1-->
+                <div class="ad_1"></div>
+                
+        <!--            게시판 영역 -->
+                <div class="boardListWrap">
+                        <h1 class="contit"> <span>T</span>ALK PLACE</h1>
+                        <h2 class="contsubtit"> 자유롭게 이야기를 나누는 공간입니다. </h2>
+
+        <!--                게시판-->
+                        <div class="category">
+                            <ul class="categoryTab">
+                                <li><a href="#" class="categoryOn" >전체(0)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">HIT</a></li>
+                                <li><a href="#">영화</a></li>
+                                <li><a href="#">잡담</a></li>
+                            </ul>
+                        </div>
+                        <table class="boardList">
+                            <caption> 게시판 제목 </caption>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>장르</th>
+                                    <th>제목</th>
+                                    <th>글쓴이</th>
+                                    <th>작성일</th>
+                                    <th>조회</th>
+                                </tr>
+                            </thead>
+                            <tbody class="boardContent">
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#" class="genretitle"><span class="genre_category">잡담</span></a></td>
+                                    <td>
+                                        <a href="boardcontent.html" class="boardTitle"> 긴 글제목  긴 글제목 긴 글제목 긴 글제목 긴 글제목 긴 글제목 긴 글제목 긴 글제목 긴 글제목 </a>
+                                    </td>
+                                    <td><span class="writer"> 긴 닉네임  긴 닉네임  긴 닉네임  긴 닉네임 </span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><span class="index">1</span></td>
+                                    <td><a href="#"><span>잡담</span></a></td>
+                                    <td>
+                                        <a href="#" class="boardTitle"> 글제목 </a>
+                                    </td>
+                                    <td><span class="writer">관리자</span></td>
+                                    <td><span class="date">작성일</span></td>
+                                    <td><span class="hit">조회</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                                <!--         페이지 리스트 영역 -->
+                        <div class="pageList">
+                            <ul class="pagination">
+                                <li><span class="prevIcon"><a href="#" class="prev"><!--이전--></a></span></li>
+                                <li class="pageOn"><a href="#" class="pageNum">1</a></li>
+                                <li><a href="#" class="pageNum">2</a></li>
+                                <li><a href="#" class="pageNum">3</a></li>
+                                <li><a href="#" class="pageNum">4</a></li>
+                                <li><a href="#" class="pageNum">5</a></li>
+                                <li><span class="nextIcon"><a href="#" class="next"><!--다음--></a></span></li>
+                            </ul>
+                        </div>
+
+
+                        <!--                글삭제, 글쓰기, 내가 쓴 글 -->
+                        <div class="btn_area">
+                            <div class="btn_side_area">
+                                <a href="#"><span>작성글 목록</span></a>
+                                <a href="boardwrite.html"><span>글쓰기</span></a>
+                            </div>
+                            <a href="#" class="btn_delete_message"><img src="imges/text.png" class="btn_img"><span>삭제</span></a>
+                        </div>
+
+
+        <!--                검색-->
+                        <form class="search_area">
+                            <fieldset>
+                                <select name="sort" class="serch_category">
+                                    <option value="">분류</option>
+                                    <option value="">제목</option>
+                                    <option value="">내용</option>
+                                </select>
+                                <input type="search" class="inputSearch" placeholder="검색어를 입력하세요." />
+                                <button type="submit" class="btn_search">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </fieldset>
+                        </form>
+                </div>
+                
+<!--                wrap flex item 3-->
+                <!--                시간 -->
+                <div class="time_area">
+                    <p>현재 시각은…</p>
+                    <div class="time_img"></div>
+                    <div class="timeNotice">
+                        <span class="realtime">「」</span> <br>
+                        <span class="genre">공포 </span>
+                        <span class="genre_ment">영화 보기 좋은 시간!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="footer">
+            copyright@
+        </div>
+        <script src="css/slide.js"></script> 
+    </body>
+</html>

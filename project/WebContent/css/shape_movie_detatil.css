@@ -1,0 +1,556 @@
+/*      �솻洹ｌ굡�룇       */
+
+#sidebar {
+    position: relative;
+    top:0;
+    width: 100%;
+    text-align: center;
+    background-color: #f3f3f3;
+    z-index: 999;
+}
+
+.sub_tab ul{
+   margin: 0;
+   list-style: none;
+   text-align: center;
+}
+.sub_tab ul li{
+   display: inline-block;
+   padding: 20px 15px;
+}
+
+.sub_tab ul li a{
+   padding: 0 10px;
+   text-decoration: none;
+   color: #222;
+}
+
+#banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, transparent, black) no-repeat 0% 30% ;
+    background-size: cover;  
+    margin: 0 auto;
+}
+
+/*       嶺뚮∥�뾼 逾�       */
+
+#main{
+    position: relative;
+    width: 980px;
+    height: 2900px;
+    background-color: #f9f9f9;
+    margin: 0px auto; 
+}
+
+#poster img{
+    position: absolute;
+    top: -200px;
+    width: 230px;  
+    height: 330px;
+    background-color: white;
+    z-index: 999;
+    padding: 10px;
+}
+
+#info{
+    position: absolute;
+    top: -200px;
+    left: 300px;
+    width: 500px;  
+    height: 200px;
+    margin: 0 auto;
+    z-index: 999;
+    color: white;
+}
+
+.info_title{
+    margin: 0;
+}
+
+.info_eng{
+    margin: 0;
+    font-size: 20px;
+}
+
+.age{
+    background-color: #f7d279;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+}
+
+#info span{
+    margin-right: 10px;
+}
+
+#info span a{
+    color: white;
+}
+
+/*   繞벿븐뫅�뤃�겳逾녑뜝    */
+
+.showstep1{
+    position: relative;
+    top: 15px;
+    left: 300px;
+    width: 380px;  
+    height: 250px;
+    margin-bottom: 40px;
+    color: #848484;
+    overflow: hidden;
+}
+
+.showstep2{
+    position: relative;
+    top: 15px;
+    left: 300px;
+    width: 380px;  
+    height: 400px;
+    margin-bottom: 20px;
+    color: #848484;
+    
+}
+
+.content{
+    position: absolute;
+    width: 380px;
+    height: 450px;
+}
+
+.hide{
+    display: none;
+}
+
+.content h3{
+    margin: 10px 0 10px;
+}
+
+.btn_open{
+    position: absolute;
+    top: 260px;
+    left: 300px;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn_open:hover{
+    text-decoration: underline;
+}
+
+/*    �솻洹��뫒 �젍,�뜝�럥利�   */
+#star{
+    position: absolute;
+    top: 20px;
+    left: 720px;
+    width: 230px;
+    background-color: #d8dcda;
+    border-radius: 10px;
+}
+
+#star h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#log{
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f7d279;
+}
+
+.rating > input {
+    display:none;
+    float: left;
+}
+
+.rating > label:before { 
+    display:inline-block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    background: url(../images/star_off.png)  no-repeat;
+    background-size: 35px;
+}
+
+.rating > label { 
+    display:inline-block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    background: url(../images/star_off.png)  no-repeat;
+    background-size: 35px;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+   background:url(../images/star_on.png)no-repeat;
+    background-size: 35px;
+}
+
+.rating{
+    text-align: center;
+    margin: 0;
+    border: none;
+    padding-right: 25px;
+}
+
+#review1{
+   width:200px;
+   height:50px;
+   margin: 0 10px;
+}
+
+.review_button1{
+    text-align: center;
+    line-height: 25px;
+    margin: 15px 65px;
+    width: 100px;
+    height: 25px;
+    background-color: #f7d279;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review_button1:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* �뜝�럡�맟�뜝�럥堉믥춯�빢�삕  逾� �맧�쑏 */
+#r_star > input {
+    display:none;
+    float: left;
+}
+
+#r_star > label:before { 
+    display:inline-block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    background: url(../images/star_off.png)  no-repeat;
+    background-size: 35px;
+}
+
+#r_star > label { 
+    display:inline-block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    background: url(../images/star_off.png)  no-repeat;
+    background-size: 35px;
+    float: right;
+}
+
+#r_star > input:checked ~ label{
+   background:url(../images/star_on.png)no-repeat;
+    background-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   �뜝�럥爰뽩뜝�럩�젷嶺뚮쪋�삕   */
+.s_title{
+    position: absolute;
+    left: 10px;
+    border-top: 2px solid;
+}
+
+/*   �뜝�럥竊쀥뜝�럥苑�   */
+#slide{
+    position: relative;
+    width: 980px;
+    height: 870px;
+    margin: 80px 0 80px 0;
+}
+
+.container{
+    position: absolute;
+    top: 60px;
+    width: 980px;
+    background-color: black;
+}
+
+.mySlides img {
+    width: 500px;
+    height: 590px;
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.sprev,
+.snext {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.snext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.sprev:hover,
+.snext:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    border-bottom: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    background-color: #222;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/*   �뜝�럩寃ュ뜝�럡留�   */
+#video{
+    position: relative;
+    width: 980px;
+    height: 600px;
+    margin-bottom: 80px;
+}
+
+#videobox{
+    position: absolute;
+    top: 60px;
+    margin: 0 auto;
+}
+
+
+/*   �뜝�럡�맟�뜝�럥堉믥춯�빖�뒭�뙴   */
+#review2{
+    position: relative;
+    width: 980px;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+.review_button2{
+    position: absolute;
+    right: 65px;
+    text-align: center;
+    line-height: 25px;
+    width: 100px;
+    height: 25px;
+    background-color: #f7d279;
+    border-radius: 5px;
+}
+
+#reviewbox{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#reviewbox p{
+    margin: 20px;
+}
+
+#review_ul{
+    display: inline-block;
+    width: 980px;
+    padding: 0;
+    margin: 0;
+}
+
+#review_ul li{
+    list-style: none;
+    padding: 20px;
+    width: 850px;
+    display: inline-block;
+    border-bottom: 1px solid #848484;
+}
+
+#id{
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+#r_star{
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+#date{
+    width: 850px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    color: #848484;
+    font-size: 15px;
+}
+
+#comment{
+    width: 665px;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0 0 20px;
+    float: left;
+}
+
+span.star-prototype, span.star-prototype > * {
+    height: 16px; 
+    background: url(http://i.imgur.com/YsyS5y8.png) 0 -16px repeat-x;
+    width: 80px;
+    display: inline-block;
+}
+ 
+span.star-prototype > * {
+   float: left;
+    background-position: 0 0;
+    max-width:80px; 
+}
+
+.btn_regist{
+   text-align: right;
+}
+
+.btn_regist a{
+   display: inline-block;
+   width: 40px;
+   text-decoration: none;
+   text-align: center;
+   color: #222;
+}
+
+.btn_regist2 a{
+   visibility: hidden;
+}
+
+.top img{
+   display: block;
+   margin: 0 auto;
+   width: 30px;
+   
+}
+
+/* �뇦猿볦삕�뜝�럡�돰�뜝�럥夷�, �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕  逾� �봾裕욃뜝�럥諭� �뜝�럩寃ュ뜝�럥�뿴 */
+#pageList {
+    position: absolute;
+    top: 730px;
+    width: 980px;
+    text-align: center;
+}
+
+.pagination{
+    display: inline-block;
+    text-align: center; font-size: 0;
+    margin: auto;
+}
+
+.pagination, .pagination li { list-style: none; }
+
+
+.pagination li {
+    border: 1px solid #dddddd;
+    display: inline-block; vertical-align: middle;
+}
+
+
+/* �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕 �뵓怨뚯뫓 諭� */
+.pagination li .prev,
+.pagination li .next {
+    display: block; width: 25px; height: 25px;
+    overflow: hidden;
+    color: transparent; /* �뼨�먯삕�뜝�럥�럞 �뜝�럥�뼫嶺뚮ㅏ援� 紐드슖�댙�삕 嶺뚮씭�뒧獄��씛�삕 裕� �뜝�럡臾뜹윜諭꾩삕 */
+    background: no-repeat center;
+}
+
+/* < > �뵓怨뚯뫓 諭� �뜝�럩逾졿쾬�꼶梨룟뜝 , �뇦猿뗫윥餓�  嶺뚯쉻�삕�뜝�럩�젧�뜝�럥留� �뇦猿볦삕  */
+.pagination li .prev { background-image: url(../images/previcon.png); background-size: 20px; }
+.pagination li .next { background-image: url(../images/nexticon.png); background-size: 20px; }
+
+.pagination li:first-child { margin-right: 6px; }
+.pagination li:last-child { margin-left: 6px; }
+
+.pagination li a { color: #9b7f72; text-shadow: 1px 0px 5px #f1eeed;
+    display: block; width: 25px; height: 25px; line-height: 25px; font-size: 13px;}
+
+.pagination li .on a, /* �뜝�럩寃긷뜝�럩�궨 �뜝�럥�쓡�뜝�럩逾좂춯�쉻�삕�뜝�럩逾у뜝�럥瑜� a:hover �뜝�럩�뮒 �뫅�삕 �뜝�럩�쓤�뜝�럩�뮔 */
+.pagination li a:hover { color: #ef4e04; text-decoration: underline; }
+.pagination li .pageNum:hover { background: #efeeeb; }

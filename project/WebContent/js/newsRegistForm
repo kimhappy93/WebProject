@@ -1,0 +1,155 @@
+<section id = "registForm">
+   <header>
+      <h2>뉴스 등록</h2>
+   </header>
+      <form action="newsRegist.mo" method="post" name = "writeForm" enctype="multipart/form-data">
+      
+   <table>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "news_name">기자  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "news_name" id ="news_name" required="required"/>
+      </td>
+   </tr>
+    
+   <tr>
+      <td class = "td_left">
+         <label for = "news_subject">기사 제목  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "news_subject" id ="news_subject" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_a">기사 사진  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_a" id ="img_a"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_a">기사1  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_a" id="content_a" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_b">기사 사진2 </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_b" id ="img_b"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_b">기사2  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_b" id="content_b" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_c">기사 사진3  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_c" id ="img_c"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_c">기사3  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_c" id="content_c" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_d">기사 사진4  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_d" id ="img_d"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_d">기사4  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_d" id="content_d" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_e">기사 사진5  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_e" id ="img_e"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_e">기사5  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_e" id="content_e" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "img_f">기사 사진6  </label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "img_f" id ="img_f"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "content_f">기사6  </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="content_f" id="content_f" rows="10" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "news_date">기사 날짜 </label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "news_date" id ="news_date" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td colspan="2" id = "commandCell"> 
+         <input type = "submit" value = "뉴스등록"/>      
+         <input type = "reset" value = "다시작성"/>      
+         <input type = "button" value = "뉴스목록보기" onClick="window.location.href='movieList.mo'"/>      
+      </td>
+   </tr>   
+   </table>
+   </form>
+   
+</section>

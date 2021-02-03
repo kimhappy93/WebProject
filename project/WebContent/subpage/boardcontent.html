@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>MOVIE</title>
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/boardcommon.css">
+        <link rel="stylesheet" href="css/common.css">
+        <script src="css/common.js"></script> 
+        <script src="css/slide.js"></script> 
+    </head>
+
+    <body>
+	 
+                <header id="header">
+              <h1 class="title" onclick="main()">MOVIE</h1>
+              <button type="button" class="login" onclick="login()">로그인</button>
+              <button type="button" class="login" onclick="join()">회원가입</button>
+              <input type="search" id="search" class="login" placeholder="검색어를 입력" onkeyup="">
+        </header>
+        <nav id="nav">
+<!--                  <span class="btn" onclick="board_1()">영화</span>-->
+            <span class="btn" onclick="board_2()">리뷰</span>
+            <span class="btn" onclick="board_3()">읽을거리</span>
+            <span class="btn" onclick="loc()">극장</span> 
+        </nav>
+        
+        <div class="wrap">
+<!--            wrap flex item 1-->
+<!--          미사용 헤더 -->
+<!--
+            <div class="subHeader_area">
+                <ul class="subHeader">
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 영화 토크 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 현영씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> 승호씨 메뉴 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="subHeaderNum">
+                            <span> ?? </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+-->
+        
+<!--            wrap flex item 2-->
+            <div class="container">
+<!--            광고1-->
+                <div class="ad_1"></div>
+                
+                <div class="contentWrap">
+                    <h1 class="contit"> <span>T</span>ALK PLACE</h1>
+                    <h2 class="contsubtit"> 자유롭게 이야기를 나누는 공간입니다.</h2>
+                    
+<!--                    실제 글쓰기 영역-->
+                    <div class="contentArea">
+                        <h3 class="tit">허슬러 시사회 - 영화홍보담당자들 너무하네요</h3> <!-- before로 카테고리 만들어주기 -->
+                        
+<!--                        글 작성자 정보-->
+                        <div class="info">
+                            <ul>
+                                <li><span>작성자</span></li>
+                                <li><span>조회</span></li>
+                                <li><span>작성시간</span></li>
+                            </ul>
+                        </div>
+                        
+<!--                        글 본문 -->
+                        <div class="content">
+                            <p>라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. 라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. 라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. <br> 라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. 라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. 라디오에서 개봉전 상 많이 받은 작품이랑 얘기 듣고 그리고 안성기님이 나오시기에 기대 많이 하고 보러 갔거든요. 코로나로 자리도 한 사람씩 걸러 앉아 친구랑 떨어져 앉아 아쉬웠지만 영화는 정말 여운을 많이 줬던 것 같아요.나름 많이 생각하게도 하구요. 감사합니다. 정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요. </p>
+                        </div>
+                        
+<!--                        작성자 권한 - 수정/삭제 -->
+                        <div class="contentEdit">
+                            <a href="#"><span>삭제</span></a>
+                            <a href="#"><span>수정</span></a>
+                        </div>
+                        
+<!--                        댓글 타이틀-->
+                        <div class="commentTit">
+                            <span>댓글</span>
+                        </div>
+                        
+<!--                        댓글 영역 시작-->
+                        <div class="commentArea">
+                            <ul class="comment_list">
+                                <li>
+                                    <div class="coment">
+                                        <div class="comentHead">
+                                            <span class="name">작성자123</span>
+                                            <a href="#" class="btn_delete">삭제</a>
+                                            <span class="time">2020.11.01</span>
+                                        </div>
+                                        <div class="comentBody">
+                                            <span class="reply">정말 너무한다 사람을 놀려대도 이럴수가 있을까</span>
+                                        </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="coment">
+                                        <div class="comentHead">
+                                            <span class="name">456작성자</span>
+                                            <a href="#" class="btn_delete">삭제</a>
+                                            <span class="time">2020.11.01</span>
+                                        </div>
+                                        <div class="comentBody">
+                                            <span class="reply">정말 아버지와 아들이 가서 보신다면 더 좋을 듯 싶어요.</span>
+                                        </div>
+                                    </div>
+                                 </li>
+                            </ul>
+                                
+                            <div class="comment_write">
+                                <div class="c_div">
+                                    <div class="writediv">
+                                        <textarea class="commentedit" placeholder="내용을 작성해주세요." onfocus="this.placeholder=''" onblur="this.placeholder='내용을 작성해주세요.'"></textarea>
+                                    </div>
+                                    <a href="#" class="btn_write">등록</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+<!--                        글목록 글쓰기 버튼-->
+                        <div class="menu">
+                            <a href="#"><span>목록</span></a>
+                            <a href="boardwrite.html"><span>글쓰기</span></a>
+                        </div>
+                    </div>
+                </div>
+<!--                wrap flex item 3-->
+                <!--                시간 -->
+                <div class="time_area">
+                    <p>현재 시각은…</p>
+                    <div class="time_img"></div>
+                    <div class="timeNotice">
+                        <span class="realtime">「」</span> <br>
+                        <span class="genre">공포 </span>
+                        <span class="genre_ment">영화 보기 좋은 시간!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            copyright@
+        </div>
+            
+    </body>
+</html>

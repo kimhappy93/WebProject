@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+      <meta charset="utf-8">
+<title>
+main
+</title> 
+<link rel="stylesheet" href="css/shape.css" type="text/css">
+<link rel="stylesheet" href="css/common.css" type="text/css">    
+<script src="slide.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+<body>
+    <div id="wrapper">
+        <header id="header">
+              <h1 class="title" onclick="main()">MOVIE</h1>
+              <button type="button" class="login" onclick="login()">로그인</button>
+              <button type="button" class="login" onclick="join()">회원가입</button>
+              <input type="search" id="search" class="login" placeholder="검색어를 입력" onkeyup="">
+         </header>
+              <nav id="nav">
+                  <span class="btn">영화</span>
+                  <span class="btn" onclick="board_2()">리뷰</span>
+                  <span class="btn" onclick="board_3()">읽을거리</span>
+                  <span class="btn">극장</span> 
+              </nav>
+            <div id="bc"> 
+                <div id = "side" class="slide">
+                     <ul>
+                         <li><img src="images/slide5.jpg"></li>  
+                        <li><img src="images/slide6.jpg"></li> 
+                        <li><img src="images/slide7.jpg"></li> 
+                        <li><img src="images/slide8.jpg"></li> 
+                    </ul> 
+                </div>
+                
+              <div id="main">
+                  
+                  <section id="section">
+                      <h4 class = "w_title"><article>최신글</article></h4>
+                     <div class="w_content">
+                          <ul class="_ul">
+                              <li class="page1">
+                                  <ul class="list_unit">
+                                    <li class="rank">
+                                      <span class="rank_wrap"><span class="rank_list">1</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">2</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">3</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">4</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">5</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                       <li class="rank"> <span class="rank_wrap"><span class="rank_list">6</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                       <li class="rank"> <span class="rank_wrap"><span class="rank_list">7</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                       <li class="rank"> <span class="rank_wrap"><span class="rank_list">8</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">최신 게시글 블라블라라라</a></span></li>
+                                       
+                                  </ul>    
+                              </li>
+                          </ul>
+                    </div>
+                      
+                  </section>
+                  
+                  <section id="section2">
+                    <h4 class = "w_title"><article>인기글</article></h4>
+                      <div class="w_content">
+                          <ul class="_ul">
+                              <li class="page1">
+                                  <ul class="list_unit">
+                                    <li class="rank">
+                                      <span class="rank_wrap"><span class="rank_list">1</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">2</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">3</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">4</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                    <li class="rank"> <span class="rank_wrap"><span class="rank_list">5</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                      <li class="rank"> <span class="rank_wrap"><span class="rank_list">6</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                      <li class="rank"> <span class="rank_wrap"><span class="rank_list">7</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                      <li class="rank"> <span class="rank_wrap"><span class="rank_list">8</span></span>
+                                      <span class="rank_main"><a class="main_title" href="#">인기 게시글 블라블라라라</a></span></li>
+                                  </ul>    
+                              </li>
+                          </ul>
+                    </div>
+                  </section>
+                  
+                  <section id="section3">
+                      <h4 class = "m_banner"><article>현재상영작</article></h4>
+                    <div class="post_wrap">
+                      <div class="post_view">
+                        <div class="post_nav">  
+                        <a class="prev" onclick="plusSlides(-1)">Prev</a>
+                        <a class="next" onclick="plusSlides(+1)">Next</a>
+                        </div>    
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_1.jfif" alt="도굴" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">1</span>도굴</span>
+                            <dl class="m_list">
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.11.04</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_2.jfif" alt="삼진그룹" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">2</span>삼진그룹 영어토익반</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.10.21</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_3.jfif" alt="담보" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">3</span>담보</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.09.29</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_4.jfif" alt="노트북" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">4</span>노트북</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.11.04</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_5.jfif" alt="테넷" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">5</span>테넷</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.08.26</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                    </div>      
+                     <div class="post_view" id="view2">
+                         <div class="post_nav">  
+                        <a class="prev" onclick="plusSlides(-1)">Prev</a>
+                        <a class="next" onclick="plusSlides(+1)">Next</a>
+                        </div>   
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_6.jfif" alt="위플래쉬" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">6</span>위플래쉬</span>
+                            <dl class="m_list">
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.10.28</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_7.jfif" alt="페이트" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">7</span>페이트 스테이</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.10.22</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_8.jfif" alt="21브릿지:테러 셧다운" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">8</span>21브릿지:테러 셧다운</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.10.21</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_9.jfif" alt="미스터트롯" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">9</span>미스터트롯:더 무비</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.10.22</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                      <a href="#" class="post_area">
+                        <div class="post_thumb"> 
+                        <img src="images/poster_10.jfif" alt="렛힘고" width="150" height="200">
+                        </div>
+                        <div class="post_info">
+                            <span class="m_title"><span class="m_rank">10</span>렛 힘 고</span>
+                            <dl>
+                            <dt class="m_dt">개봉일</dt>
+                                <dd>2020.11.05</dd>
+                            </dl>
+                        </div>  
+                      </a>
+                    </div>        
+                </div>   
+                  </section>
+                  <section id="section4">
+                    <div id="news">
+                      <ul class="news_list">
+                        <li>
+                            <a href="https://kana9648.github.io/Movie/read3.html">
+                                <img src="images/news1.jpg" class="news_thumb">
+                                <div class="news_text">
+                                <p class="news_title">
+                                    [뉴욕] 흑인 인권 주제로 한 작품들이 대세 이룬 제58회 뉴욕영화제
+                                </p>
+                                    <p class="news_content">
+                                    뉴욕의 대표적인 이벤트 뉴욕영화제가 지난 9월 17일부터 10월 11일까지 열렸다. 58회를 맞은 올해 영화제에선 지난 수개월 동안 미국은 물론 세계적으로 이슈가 된 ‘흑인의 목숨도 소중하다’ (Black Lives Matter, 이하 BLM) 운동과 관련된 작품이 대거 소개됐다. 
+                                    </p>    
+                                </div>
+                            </a>  
+                        </li>
+                        <li>
+                          <a href="https://kana9648.github.io/Movie/read4.html">
+                            <img src="images/news2.jpg" class="news_thumb">
+                            <div class="news_text">  
+                            <p class="news_title">전지현을 주인공으로 한 킹덤의 스페셜 에피소드가 공개된다</p> 
+                              <p class="news_content">넷플릭스 오리지널 시리즈 킹덤이 스페셜 에피소드 킹덤: 아신전(이하 아신전)으로 돌아온다. 최근 촬영에 돌입한 아신전을 이끌어갈 주인공 아신(전지현)은 지난 3월 공개된 킹덤 시즌2 엔딩에서 갑작스레 등장하며 화제가 된 캐릭터다. 
+                              </p>
+                            </div>    
+                          </a>
+                        </li>  
+                        <li>
+                          <a href="https://kana9648.github.io/Movie/read7.html">
+                            <img src="images/news3.jpg" class="news_thumb">
+                            <div class="news_text">  
+                            <p class="news_title">드니 빌뇌브 감독과 제이크 질렌홀이 요 네스뵈의 소설 아들을 'HBO'에서 시리즈물로 함께 만든다 外</p> 
+                              <p class="news_content">드니 빌뇌브 감독과 제이크 질렌홀이 요 네스뵈의 소설 아들을 HBO에서 시리즈물로 함께 만든다.에너미 프리즈너스 이후 오랜만의 협업이다. 원작은 범죄로 오염된 오슬로를 배경으로 한 탈옥수 소니의 이야기로, 제이크 질렌홀은 연기뿐 아니라 제작에도 참여한다. 
+                              </p>
+                            </div>    
+                          </a>
+                        </li>
+                        </ul>
+                      
+                      </div>
+                  </section>
+                </div>    
+            </div>
+        
+           
+              <div id="footer">
+              copyright@
+              </div>
+           
+          </div>
+      
+      </body>
+  </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<table border="1" align="center" width="680" height="170" class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>제주 영상미디어센터</td>
+                        <td>제주시</td>
+                        <td>064-727-7801</td>
+                        <td><button type="button"><a href="location/제주/jeju_1.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>제주 씨네아일랜드</td>
+                        <td>제주시</td>
+                        <td>064-702-1191</td>
+                        <td><button type="button"><a href="location/제주/jeju_2.jsp">상세보기</a></button></td>
+                    </tr>
+                </tbody>
+        </table>        

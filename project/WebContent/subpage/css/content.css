@@ -1,0 +1,259 @@
+
+.contentWrap {
+    flex-basis: 1200px;  width: 1200px;
+    margin: 0; padding: 50px;
+    flex-grow: 0; flex-shrink: 0;
+}
+
+.container .contentWrap .sub_tit_wrap { display: inline-block; width:235px; height:50px; margin-top : 30px;}
+.container .contentWrap .sub_tit_wrap2 { display: inline-block; width:500px; height:70px; margin-top : 30px;}
+
+.contit { font-size: 45px; font-weight: 500; margin-right :15px; }
+.container .contentWrap .sub_tit_wrap2 p {  line-height: 3px;}
+
+.contentArea {
+    padding: 20px 0px 0 0px;
+    border-top: 1px solid #c7c7c7;
+    margin-bottom: 20px;
+}
+
+.contentWrap .contentArea .titZone {
+	height : 60px;
+	margin: 35px 0px 10px 10px;
+}
+
+.contentWrap .contentArea .gtitle {
+	background: #5F5F5F;
+    display: inline-block;
+    border-radius: 2px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-weight: 500;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: sub;
+}
+
+.contentWrap .contentArea .tit {
+    font-size: 24px;
+    font-weight : 500;
+    color: #222;
+    margin: 15px 0px 15px 0px;
+    text-indent: 0px;
+    display : inline-block;
+    vertical-align: sub;
+}
+
+/* 占쎈쐻占쎈윪占쎄탾占쎈쐻占쎈윞占쎈렰占쎈쐻占쎈윪占쎄껑 占쎈쐻占쎈윪占쎌젳占쎌녃域밟뫁�굲, 占쎈뙑�⑤슦占싼띿삕占쎈쨧占쎈쐻占쎈윥占쎈묄 */
+.contentWrap .contentArea .info {
+    background: #f5f5f5;
+    border-top: 1px solid #c7c7c7; border-bottom: 1px solid #c7c7c7;
+    padding: 10px 15px 10px 15px;
+}
+
+.contentWrap .contentArea .info ul,
+.contentWrap .contentArea .info li { list-style: none; }
+
+.contentWrap .contentArea .info ul { font-size: 14px; }
+.contentWrap .contentArea .info li {
+    display: inline-block;
+    padding-right: 13px;
+}
+
+.contentWrap .contentArea .info li:first-child:before {
+    content: '|';
+    color: #777;
+    margin: 0px 10px 0px 20px;
+}
+
+.contentWrap .contentArea .info li:nth-child(2) span:before {
+	content: '| ';
+    color: #a3a3a3;
+    
+}
+
+.contentWrap .contentArea .info li:nth-child(3) span:before {
+	content: '| ';
+    color: #a3a3a3;
+}
+
+.contentWrap .contentArea .info li:nth-child(n+2):nth-child(-n+3) { float: right; margin-right : 10px;}
+
+.contentWrap .contentArea .contentDown {
+	margin : 7px 0;
+	float: right;
+}
+
+.contentWrap .contentArea .contentDown .filedown {
+	vertical-align: top;
+	margin-top : 20px;
+	margin-right : 20px;
+}
+
+/*占쎌녃域뱄퐣援∽옙猷� */
+.contentWrap .contentArea .content {
+    padding: 30px 30px 20px 35px;
+    font-size : 13px;
+    min-height : 150px;
+}
+
+.contentWrap .contentArea .contentEdit {
+    position: relative;
+    margin: 20px 0px 75px 0px;
+}
+
+.contentWrap .contentArea .contentEdit a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 0px 8px 0px 0px;
+    background: #d2d2d2;
+    border-radius: 2px;
+    border: 1px solid #c7c7c7;
+    font-size: 0;
+    float: right;
+}
+
+.contentWrap .contentArea .contentEdit a:first-child {
+    background: #444;
+}
+
+.contentWrap .contentArea .contentEdit a span {
+    font-size: 12px;
+    color: white;
+}
+
+
+/*占쎈쐻占쎈윥占쎈꺔占쎈섀占쎈Ŋ�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈윪�얠±�쐻占쎈짗占쎌굲*/
+.contentWrap .contentArea .commentTit {
+    background: #f5f5f5;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 10px 15px 10px 15px;
+    font-size : 14px;
+}
+
+.contentWrap .contentArea .commentTit span:first-child:before {
+    content: '|';
+    color: #777;
+    margin: 0px 10px 0px 20px;
+}
+
+
+.contentWrap .commentArea .comment_list, 
+.contentWrap .commentArea .comment_list li { list-style: none; }
+
+.contentWrap .commentArea .comment_list li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.contentWrap .commentArea .comment_list li:last-child {
+    border: none;
+}
+
+.contentWrap .commentArea .comment_list .coment {
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px 20px 15px 20px;
+}
+
+.comment_list .coment .comentHead {
+    margin: 8px 0;
+}
+
+.comment_list .coment .comentHead .name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.comment_list .coment .comentHead .name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment_list .coment .time,
+.comment_list .coment .btn_delete {
+    float: right;
+    padding: 0px 5px;
+    font-size: 11px;
+    color: #999;
+    line-height : 10px;
+}
+
+.comment_list .coment .btn_delete:hover {
+    text-decoration: underline;
+}
+
+.comment_list .coment .comentBody .reply {
+    font-size: 13px;
+    color: #444;
+}
+
+/*占쎈쐻占쎈윥占쎈꺔占쎈섀占쎈Ŋ�굲 占쎈쐻占쎈윥�떋釉�堉⑨옙癒��굲*/
+.contentWrap .commentArea .comment_write {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 20px;
+}
+
+.contentWrap .commentArea .comment_write .c_div {
+    width: 870px;
+    height: 72px;
+    margin: 0 auto;
+    /* font-size: 0; */
+    position: relative;
+}
+
+.contentWrap .commentArea .comment_write .writediv {
+    display: inline-block;
+}
+
+/*占쎈쐻占쎈윥占쎈꺔占쎈섀占쎈Ŋ�굲 占쎈쐻占쎈윪占쎄탾占쎈쐻占쎈윞占쎈렰 div*/
+.contentWrap .commentArea .comment_write .writediv .commentedit {
+    width: 750px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 1px;
+    color: #555;
+    font-size: 12px;
+    resize: none;
+/*    占쎈쐻占쎈윥獒뺤쉩�쐻占쎈윞�떋�슃�뒙占쎈뙔占쎌굲 占쎈쨬占쎈즸占쎌굲占쎌뒙占쎈뙔占쎌굲 占쎈쐻占쎈윥占쎈폇嚥싲갭�돘占쎌굲, 占쎈쐻占쎈윞占쎈룵占쎌뒙占쎈뙔占쎌굲 占쎌녃域뱄퐢�깓�뜝�럥�뿮*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*占쎈쐻占쎈윥占쎈꺔占쎈섀占쎈Ŋ�굲 占쎈쐻占쎈윪占쎄탾占쎈쐻占쎈윞占쎈렰 占쎈탶�⑤슣維볟뜝�럥愿�*/
+.contentWrap .commentArea .comment_write .btn_write {
+    position: absolute;
+    width: 98px;
+    height: 72px;
+    border-radius: 1px;
+    background: grey;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 72px;
+}
+
+/* 占쎈쐻占쎈윥�뵳占쏙옙�쐻占쎈윥�젆占� 癲ル슢�닪占쏙옙�뜝�럥占� */
+.contentWrap .contentArea .menu a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 10px 8px 30px 0px;
+    background: #424242;
+    border-radius: 2px;
+    border: 1px solid #555;
+    font-size: 0;
+    float: right;
+}
+
+.contentWrap .contentArea .menu a span {
+    font-size: 12px;
+    color: white;
+}
+

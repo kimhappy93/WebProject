@@ -1,0 +1,42 @@
+<table border="1" width="650" height="350" align="center" class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CGV 대전 아트하우스</td>
+                        <td>대전광역시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/충청/cc_1.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>대전 아트시네마</td>
+                        <td>대전광역시</td>
+                        <td>042-472-1138</td>
+                        <td><button type="button"><a href="location/충청/cc_2.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>제천영상미디어센터 봄</td>
+                        <td>충북 제천시</td>
+                        <td>043-645-4995</td>
+                        <td><button type="button"><a href="location/충청/cc_3.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 천안 아트하우스</td>
+                        <td>충남 천안시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/충청/cc_4.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>인디플러스 천안</td>
+                        <td>충남 천안시</td>
+                        <td>041-415-0093</td>
+                        <td><button type="button"><a href="location/충청/cc_5.jsp">상세보기</a></button></td>
+                    </tr>
+                </tbody>
+            </table>    

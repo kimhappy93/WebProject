@@ -1,0 +1,142 @@
+/*  筌롫뗄�뵥  */
+
+#s_title{
+    padding: 50px 0 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin:0;
+}
+
+#s_title:after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 3px;
+    margin: 35px auto 0 auto;
+    background-color: #333;
+}
+
+.btn_regist{
+	display: inline-block;
+}
+
+
+.btn_regist2 #m_regist{
+	visibility: hidden;
+}
+
+.movie_list{
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.movie_list > li{
+    display: inline-block;
+    list-style: none;
+    width: 220px;
+    height: 380px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 20px 9px;
+}
+
+.image_movie{
+    position: relative;
+    width: 220px;
+    height: 320px;
+}
+
+.image_movie > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 221px;
+    height: 321px;
+}
+
+/*
+.image_movie > img:hover{
+    filter: brightness(40%); 
+}
+*/
+
+.point{
+    opacity: 0;
+}
+
+.info_movie{
+    padding: 10px;
+}
+
+.info_title{
+    display:block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 200px;
+    margin: 0;
+}
+
+
+li {
+    display: list-item;
+}
+
+.pageList {
+/*    background: #d8dcda;*/
+    margin: 30px 0;
+}
+
+.pagination{
+    text-align: center; font-size: 0;
+    margin: auto;
+}
+
+.pagination, .pagination li { list-style: none; }
+
+
+.pagination li {
+    border: 1px solid #dddddd;
+    display: inline-block; vertical-align: middle;
+}
+
+
+/* 占쎈쐻占쎈윥占쎌뱻占쎈쐻占쎈윪�얠쥉異�占쎌돸占쎌굲 占쎈탶�⑤슣維볟뜝�럥愿� */
+.pagination li .prev,
+.pagination li .next {
+    display: block; width: 25px; height: 25px;
+    overflow: hidden;
+    color: transparent; /* 占쎈섀占쎈Ŋ�굲占쎈쐻占쎈윥占쎈윛 占쎈쐻占쎈윥占쎈섐癲ル슢�뀖�뤃�쉻�삕筌뤿뱶�뒙占쎈뙔占쎌굲 癲ル슢�뵯占쎈뮛�뛾占쏙옙�뵛占쎌굲�뜝�럥痢� 占쎈쐻占쎈윞�눧�쑚�쐺獄�袁⑹굲 */
+    background: no-repeat center;
+}
+
+.pagination li .prev { background-image: url(/images/previcon.png); background-size: 20px; }
+.pagination li .next { background-image: url(/images/nexticon.png); background-size: 20px; }
+
+.pagination li:first-child { margin-right: 6px; }
+.pagination li:last-child { margin-left: 6px; }
+
+.pagination li a {
+    color: #9b7f72; text-shadow: 1px 0px 5px #f1eeed;
+    font-size: 13px;
+    display: block; width: 25px; height: 25px;
+    line-height: 25px;
+}
+
+#m_title{
+    display:block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 220px;
+    margin: 0;
+}

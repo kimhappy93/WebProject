@@ -1,0 +1,226 @@
+<section id = "registForm">
+  
+      <h2>영화 등록</h2>
+   
+      <form action="movieRegist.mo" method="post" name = "writeForm" enctype="multipart/form-data">
+      
+   <table>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_title">영화 제목</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_title" id ="m_title" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_poster">영화 포스터</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_poster" id ="m_poster"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_date">개봉일</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_date" id ="m_date" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_banner">영화 배너</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_banner" id ="m_banner"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_title_eng">영화 영어 제목</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_title_eng" id ="m_title_eng" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_year">연도</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_year" id ="m_year" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_nation">국가</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_nation" id ="m_nation" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_age">관람가</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_age" id ="m_age" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_genre">장르</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_genre" id ="m_genre" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_time">상영시간</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_time" id ="m_time" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_total">누적 관객수</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_total" id ="m_total" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_director">감독</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_director" id ="m_director" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_actor">출연</label>
+      </td>
+      <td class = "td_right">
+         <input type = "text" name = "m_actor" id ="m_actor" required="required"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_summary1">줄거리1</label>
+      </td>
+      <td class = "td_right">
+         <textarea name="m_summary1" id="m_summary1" rows="8" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_summary2">줄거리2 </label>
+      </td>
+      <td class = "td_right">
+         <textarea name="m_summary2" id="m_summary2" rows="8" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_summary3">줄거리3</label>
+      </td>
+      <td class = "td_right">
+         <textarea name="m_summary3" id="m_summary3" rows="5" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide1">슬라이드1</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide1" id ="m_slide1"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide2">슬라이드2</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide2" id ="m_slide2"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide3">슬라이드3</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide3" id ="m_slide3"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide4">슬라이드4</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide4" id ="m_slide4"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide5">슬라이드5</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide5" id ="m_slide5"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_slide6">슬라이드6</label>
+      </td>
+      <td class = "td_right">
+         <input type = "file" name = "m_slide6" id ="m_slide6"/>
+      </td>
+   </tr>
+   
+   <tr>
+      <td class = "td_left">
+         <label for = "m_video">공식 예고편</label>
+      </td>
+      <td class = "td_right">
+         <textarea name="m_video" id="m_video" rows="3" cols="40" wrap="off"></textarea>
+      </td>
+   </tr>
+   
+   <tr>
+      <td colspan="2" id = "commandCell"> 
+         <input type = "submit" value = "최신영화등록"/>      
+         <input type = "reset" value = "다시작성"/>      
+         <input type = "button" value = "최신영화목록보기" onClick="window.location.href='movieList.mo'"/>      
+      </td>
+   </tr>   
+   </table>
+   </form>
+   
+</section>

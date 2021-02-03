@@ -1,0 +1,415 @@
+/*      본문       */
+
+#banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, transparent, black), url(http://image.cine21.com/cine21/poster/2020/0929/55298_5f72f7b07fa74.jpg) no-repeat 0% 30% ;
+    background-size: cover;  
+    margin: 0 auto;
+}
+
+/*       메인       */
+
+#main{
+    position: relative;
+    width: 980px;
+    height: 2900px;
+    background-color: #EBEBEB;
+    margin: 0px auto; 
+}
+
+#poster{
+    position: absolute;
+    top: -200px;
+    width: 230px;  
+    height: 330px;
+    background-color: white;
+    z-index: 999;
+    padding: 10px;
+}
+
+#info{
+    position: absolute;
+    top: -200px;
+    left: 300px;
+    width: 350px;  
+    height: 200px;
+    margin: 0 auto;
+    z-index: 999;
+    color: white;
+}
+
+.info_title{
+    margin: 0;
+}
+
+.info_eng{
+    margin: 0;
+    font-size: 20px;
+}
+
+.age{
+    background-color: #f7d279;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+}
+
+#info span{
+    margin-right: 10px;
+}
+
+#info span a{
+    color: white;
+}
+
+/*   줄거리   */
+
+.showstep1{
+    position: relative;
+    top: 15px;
+    left: 300px;
+    width: 380px;  
+    height: 250px;
+    margin-bottom: 40px;
+    color: #848484;
+    overflow: hidden;
+}
+
+.showstep2{
+    position: relative;
+    top: 15px;
+    left: 300px;
+    width: 380px;  
+    height: 550px;
+    margin-bottom: 40px;
+    color: #848484;
+    
+}
+
+.content{
+    position: absolute;
+    width: 380px;
+    height: 600px;
+}
+
+.hide{
+    display: none;
+}
+
+.content h3{
+    margin: 10px 0 10px;
+}
+
+.btn_open{
+    position: absolute;
+    top: 260px;
+    left: 300px;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn_open:hover{
+    text-decoration: underline;
+}
+
+/*    별점,평   */
+#star{
+    position: absolute;
+    top: 20px;
+    left: 720px;
+    width: 230px;
+    background-color: #d8dcda;
+    border-radius: 10px;
+}
+
+#star h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*
+#star h3{
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f7d279;
+}
+*/
+
+.starRev{
+    text-align: center;
+    margin: 20px 5px;
+}
+
+.starR{
+  background:url(../images/ico_review-removebg.png) no-repeat right 0;
+  background-size: auto 100%;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.starR.on{background-position:0 0;}
+
+.review_button1{
+    text-align: center;
+    line-height: 25px;
+    margin: 15px auto;
+    width: 100px;
+    height: 25px;
+    background-color: #f7d279;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review_button1:hover{
+    text-decoration: underline;
+}
+
+/*   소제목   */
+.s_title{
+    position: absolute;
+    left: 10px;
+    border-top: 2px solid;
+}
+
+/*   포토   */
+#slide{
+    position: relative;
+    width: 980px;
+    height: 870px;
+    margin: 80px 0 80px 0;
+}
+
+.container{
+    position: absolute;
+    top: 60px;
+    width: 980px;
+    background-color: black;
+}
+
+.mySlides img {
+    width: 500px;
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.sprev,
+.snext {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.snext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.sprev:hover,
+.snext:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    border-bottom: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    background-color: #222;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/*   영상   */
+#video{
+    position: relative;
+    width: 980px;
+    height: 600px;
+    margin-bottom: 80px;
+}
+
+#videobox{
+    position: absolute;
+    top: 60px;
+    margin: 0 auto;
+}
+
+
+/*   네티즌평  */
+#review{
+    position: relative;
+    width: 980px;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+.review_button2{
+    position: absolute;
+    right: 65px;
+    text-align: center;
+    line-height: 25px;
+    width: 100px;
+    height: 25px;
+    background-color: #f7d279;
+    border-radius: 5px;
+}
+
+#reviewbox{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#review_ul{
+    display: inline-block;
+    width: 980px;
+    padding: 0;
+    margin: 0;
+}
+
+#review_ul li{
+    list-style: none;
+    margin-top: 25px;
+    width: 850px;
+    display: inline-block;
+    border-bottom: 1px solid #848484;
+}
+
+#id{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+#r_star{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+#date{
+    width: 670px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    color: #848484;
+    font-size: 15px;
+}
+
+#comment{
+    width: 850px;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* 검색폼, 페이지 리스트 영역 */
+#pageList {
+    position: absolute;
+    top: 730px;
+    width: 980px;
+    text-align: center;
+}
+
+.pagination{
+    display: inline-block;
+    text-align: center; font-size: 0;
+    margin: auto;
+}
+
+.pagination, .pagination li { list-style: none; }
+
+
+.pagination li {
+    border: 1px solid #dddddd;
+    display: inline-block; vertical-align: middle;
+}
+
+
+/* 페이징 버튼 */
+.pagination li .prev,
+.pagination li .next {
+    display: block; width: 25px; height: 25px;
+    overflow: hidden;
+    color: transparent; /* 글씨 투명으로 만드는 태그 */
+    background: no-repeat center;
+}
+
+/* < > 버튼 이미지, 경로 지정할 것  */
+.pagination li .prev { background-image: url(../images/previcon.png); background-size: 20px; }
+.pagination li .next { background-image: url(../images/nexticon.png); background-size: 20px; }
+
+.pagination li:first-child { margin-right: 6px; }
+.pagination li:last-child { margin-left: 6px; }
+
+.pagination li a { color: #9b7f72; text-shadow: 1px 0px 5px #f1eeed;
+    display: block; width: 25px; height: 25px; line-height: 25px; font-size: 13px;}
+
+.pagination li .on a, /* 현재 페이지일때 a:hover 효과 적용 */
+.pagination li a:hover { color: #ef4e04; text-decoration: underline; }
+.pagination li .pageNum:hover { background: #efeeeb; }

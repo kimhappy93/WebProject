@@ -1,0 +1,212 @@
+ 
+/* 글꼴 Roboto, Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+
+body{
+    padding:0;
+    margin:0;
+    font-family: Roboto,'Noto Sans KR';
+ }
+          
+ #wrapper{
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+
+/*      헤더      */
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 105px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+    z-index: 100;
+}
+             
+.title{
+    position: absolute;
+    left:180px;
+    top:-15px;
+    cursor: pointer;
+    font-size: 50px;
+    z-index: 2;
+}
+
+
+
+/*   로그인, 검색  */   
+
+.login{
+    position: relative;
+    right: 15px;
+    top:2px;
+    border-style: none;
+    background-color: #fff;
+    color:#5F5F5F;
+    margin: 5px;
+    font-size: 15px;
+    font-weight:bold;
+    cursor: pointer;
+    z-index: 1;
+    font-family: Roboto,'Noto Sans KR';
+}
+
+#search{
+    border-bottom: 1px solid black;
+    cursor: text;
+}
+
+#searchBtn{
+    position: relative;
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+    right: 23px;
+    bottom:3px;
+    font-size: 0px;
+    border-style: none;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;      
+}
+
+#searchBtn:hover{
+	transform:scale(1.5);
+	overflow: hidden; 
+}
+
+#hi{
+	position: relative;
+	right:10px;
+	top:2px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #5F5F5F;
+	cursor: default;
+}
+
+
+
+/*      페이지메뉴       */
+            
+#nav{
+    position: relative;
+    width:100%;
+    height: 40px;
+}
+          
+.btn{
+    position: relative;
+    right: 710px;
+    top:8px;
+    width: 80px;
+    margin: 12px;
+    cursor: pointer;
+    color:#5F5F5F;
+    font-size: 18px;
+}
+
+.btn:before{
+    content: "|";
+    padding-right: 18px; 
+    color: #5F5F5F;
+}
+
+#nav span:nth-child(1):before{
+    content: "";
+}
+
+.btn:hover{
+    color: silver;
+    text-decoration: underline;
+}
+
+
+
+/*      푸터      */
+         
+#footer{     
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: black;  
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+
+
+/* 서치페이지 */
+
+#search_wrap{
+    background-color:#fff;
+    position: relative;
+    width: 100%; 
+    height: 100%;
+}
+
+#search_name h2{
+    padding: 85px 0 30px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#search_name h2::after{
+    display: block;
+    content: '';
+    width:25px;
+    height: 3px;
+    margin: 35px auto 0 auto;
+    background-color:#333;
+}
+
+#search_wrap h2{
+    text-align: center;
+}
+
+#search_content{
+    width:1000px;
+    border-top: 1px solid;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.search_title{
+    margin-bottom: 25px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#555;
+}
+
+.search_info{
+    margin-bottom: 25px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.search{
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+

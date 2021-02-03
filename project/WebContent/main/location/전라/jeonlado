@@ -1,0 +1,49 @@
+<table border="1" width="650" height="370" align="center" class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>익산 재미극장</td>
+                        <td>전북 익산시</td>
+                        <td>070-8282-8070</td>
+                        <td><button type="button"><a href="location/전라/jr_1.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>시네마라운지MM</td>
+                        <td>전남 목포시</td>
+                        <td>010-8702-4898</td>
+                        <td><button type="button"><a href="location/전라/jr_2.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>순천시 영상미디어센터</td>
+                        <td>전남 순천시</td>
+                        <td>061-811-0220</td>
+                        <td><button type="button"><a href="location/전라/jr_3.jsp">상세보기</a></button></td>
+                    </tr>    
+                    <tr>
+                        <td>전주 영화제작소</td>
+                        <td>전북 전주시</td>
+                        <td>063-231-3377</td>
+                        <td><button type="button"><a href="location/전라/jr_4.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>CGV 광주터미널 아트하우스</td>
+                        <td>광주광역시</td>
+                        <td>1544-1122</td>
+                        <td><button type="button"><a href="location/전라/jr_5.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>광주 독립영화관</td>
+                        <td>광주광역시</td>
+                        <td>062-222-1895</td>
+                        <td><button type="button"><a href="location/전라/jr_6.jsp">상세보기</a></button></td>
+                    </tr>
+                     
+                </tbody>
+            </table>    

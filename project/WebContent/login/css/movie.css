@@ -1,0 +1,123 @@
+/*  메인  */
+
+#main{
+    width: 980px;        
+    margin: 0 auto;
+}
+
+.s_title{
+    display: inline-block;
+    border-top: 3px solid #f7d279;
+    border-bottom: 3px solid #f7d279;
+    margin: 30px 0 20px 10px;
+}
+
+.movie_list{
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.movie_list > li{
+    display: inline-block;
+    list-style: none;
+    width: 220px;
+    height: 380px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 20px 9px;
+}
+
+.image_movie{
+    position: relative;
+    width: 220px;
+    height: 320px;
+}
+
+.image_movie > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 221px;
+    height: 321px;
+}
+
+/*
+.image_movie > img:hover{
+    filter: brightness(40%); 
+}
+*/
+
+.point{
+    opacity: 0;
+}
+
+.info_movie{
+    padding: 10px;
+}
+
+.info_title{
+    display:block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 200px;
+    margin: 0;
+}
+
+.paging{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.pagination {
+    justify-content: center;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 4px;
+}
+
+
+li {
+    display: list-item;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color:#9B7F72;
+    background-color: #fff;
+    border: 1px solid #F7D279;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination a:hover{
+    background-color: #50403F;
+    color: #F7D279;
+}
+
+.paging a{
+text-decoration: none;
+}

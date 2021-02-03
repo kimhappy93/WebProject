@@ -1,0 +1,207 @@
+legend { position: absolute; top: 0; left: 0; width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; visibility: hidden; }
+
+fieldset { border: none; }
+
+/* 占쎈연獄쏉옙 筌욑옙占쎌젟 */
+.writeWrap {
+    flex-basis: 1200px;  width: 1200px;
+    margin: 0; padding: 50px;
+    flex-grow: 0; flex-shrink: 0;
+}
+
+.writeArea {
+    padding: 10px 10px 0 10px;
+    border-top: 1px solid #a3a3a3;
+    margin-bottom: 20px;
+}
+
+.container .writeWrap .sub_tit_wrap { display: inline-block; width:235px; height:50px; margin-top : 30px;}
+.container .writeWrap .sub_tit_wrap2 { display: inline-block; width:500px; height:70px; margin-top : 30px;}
+
+.contit { font-size: 45px; font-weight: 500; margin-right :15px; }
+.container .writeWrap .sub_tit_wrap2 p {  line-height: 3px;}
+
+.writeArea table {
+	width: 1150px;
+    margin: 0 auto;
+    }
+
+.writeArea table tbody tr { border-bottom : 1px solid #c7c7c7; }
+
+.writeArea table tbody tr th,
+.writeArea table tbody tr td {
+    padding: 30px 30px 20px 0px;
+}
+
+.writeArea table tbody tr th span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.writeArea table tbody tr:nth-child(-n+3) span:after {
+    content: '*';
+    font-size: 10px;
+    font-weight: bold;
+    color: #ef4e04;
+    margin-left: 5px;
+}
+
+/*燁삳똾�믤�⑥쥓�봺 占쎄퐬占쎌젟 占쎌겫占쎈열*/
+.writeArea table tbody .category {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+}
+
+/*占쎌젫筌륅옙 占쎌겫占쎈열 */
+.writeArea table tbody #subject {
+    width: 872px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border-left: 1px solid #c7c7c7; border-right: none;
+    border-top: none; border-bottom: none;
+    font-size: 12px;
+}
+
+/* 癰귣챶揆 疫뀐옙占쎈쾺疫뀐옙 占쎌겫占쎈열*/
+.writeArea table .textAreaWrap .txtEdit {
+    width: 850px;
+    height: 300px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    color: #555;
+    font-size: 12px;
+    resize: none;
+    
+/*    占쎈뮞占쎄쾿嚥∽옙 揶쏉옙嚥∽옙 占쎈떜繹먲옙, 占쎄쉭嚥∽옙 癰귣똻�뿫*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* 占쎈솁占쎌뵬 占쎈씜嚥≪뮆諭� 占쎌겫占쎈열*/
+.writeArea table .file_box {
+	position:relative;
+	font-size:0;
+}
+
+.writeArea table .file_box input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+
+.writeArea .file_box label {
+	display: inline-block;
+	line-height: 0;
+	margin-left: 5px;
+	margin-top: -3px;
+	color: #999;
+	vertical-align: middle;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	color: #0fb5bf;
+	text-align:center;
+	box-sizing:border-box;
+	background:#fff;
+}
+
+.writeArea .file_box label img {
+    padding: 6px;
+    margin-left: 6px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c7c7c7;
+    border-radius: 15px;
+    background: #f4f4f4;
+}
+
+.writeArea .file_box label img:hover {
+    border: 1px solid #777;
+}
+
+
+.writeArea .file_box .upload_name {
+	display: inline-block;
+	padding: 0 20px 0 50px;
+	width: 872px;
+	height:30px;
+	line-height:40px;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 12px;
+	font-weight: 500;
+	color: #a8a8a8;
+	box-sizing:border-box;
+}
+
+
+.writeArea table .file_box .upload-display {
+    position: absolute;
+    left: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+}
+
+.writeArea table .file_box .upload-display img {
+	display: block;
+	max-width: 100%;
+	width: 100% \9;
+	max-height:100%;;
+}
+
+
+/* 野껊슣�뻻疫뀐옙 占쎈씜嚥≪뮆諭�,�뿆�뫁�꺖 甕곌쑵�뱣 */
+.writeArea form .btnArea {
+    margin: 30px 90px 15px 0px;
+    text-align: right;
+    padding: 5px 30px 10px 15px;
+}
+
+.writeArea form .btnArea .wbtn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 18px;
+    margin-left: 10px;
+    background: white;
+    border-radius: 1px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0px 0px 2px #c7c7c7;
+    color: #424242;
+    font-weight: 400;
+}
+
+.writeArea form .btnArea .wbtn:nth-child(1) {
+    background: #444;
+    color: white;
+}
+
+.writeArea form .btnArea .wbtn:nth-child(2) {
+    background: #dddddd;
+}
+
+.writeArea form .btnArea .wbtn:nth-child(1):hover {
+    border: 1px solid #777;
+}
+
+.writeArea form .btnArea .wbtn:nth-child(2):hover {
+    border: 1px solid grey;
+    color : white;
+}

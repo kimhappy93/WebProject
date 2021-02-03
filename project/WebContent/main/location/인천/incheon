@@ -1,0 +1,48 @@
+<table border="1" align="center" width="680" height="400"  class="theater_list">
+                <thead>
+                    <tr>
+                        <td>극장명</td>
+                        <td>극장위치</td>
+                        <td>연락처</td>
+                        <td>상세위치</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>미림극장</td>
+                        <td>동구</td>
+                        <td>032-764-8880</td>
+                        <td><button type="button"><a href="location/인천/ic_1.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>애관극장</td>
+                        <td>중구</td>
+                        <td>032-761-7177</td>
+                        <td><button type="button"><a href="location/인천/ic_2.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>영화공간 주안</td>
+                        <td>미추홀구</td>
+                        <td>032-427-6777</td>
+                        <td><button type="button"><a href="location/인천/ic_3.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>CGV 인천 아트하우스</td>
+                        <td>남동구</td>
+                        <td>1544-1112</td>
+                        <td><button type="button"><a href="location/인천/ic_4.jsp">상세보기</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>롯데시네마 부평 아르떼클래식</td>
+                        <td>부평구</td>
+                        <td>1544-8855</td>
+                        <td><button type="button"><a href="location/인천/ic_5.jsp">상세보기</a></button></td>
+                    </tr>
+                     <tr>
+                        <td>대한극장</td>
+                        <td>부평구</td>
+                        <td>032-503-3300</td>
+                        <td><button type="button"><a href="location/인천/ic_6.jsp">상세보기</a></button></td>
+                    </tr>
+                </tbody>
+         </table> 
