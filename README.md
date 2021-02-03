@@ -324,7 +324,29 @@ function showSlides(n) {
 
 ![gif4](https://user-images.githubusercontent.com/68000697/105955946-66370f00-60ba-11eb-8885-ed67e35fad21.gif)
 
+```
+//영화 리뷰 및 평점 삭제
+	   public int deleteReview(int r_num){
 
+		      PreparedStatement pstmt = null;
+		      String review_delete_sql="delete from moviereview where r_num = ?";
+		      int deleteCount=0;
+
+		      try{
+		         pstmt=con.prepareStatement(review_delete_sql);
+		         pstmt.setInt(1, r_num);
+		         
+		         deleteCount=pstmt.executeUpdate();
+		      }catch(Exception ex){
+		         System.out.println("reviewDelete 에러 : "+ex);
+		      }   finally{
+		         close(pstmt);
+		      }
+
+		      return deleteCount;
+
+		   }
+```
 
 
 > 비밀번호 찾기
