@@ -27,17 +27,15 @@ public class MovieListAction implements Action {
 		MovieListService MoiveListService = new MovieListService();
 		
 		
-		int listCount = MoiveListService.getListCount(); 	//ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½
+		  int listCount = MoiveListService.getListCount(); 	//¿µÈ­ °Ô½Ã±Û °³¼ö
 	      
 	      movieList = MoiveListService.getMovieList(page,limit);
 	      
-	      int maxPage=(int)((double)listCount/limit+0.95); 	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+	      int maxPage=(int)((double)listCount/limit+0.95); 	//¸¶Áö¸· ÆäÀÌÁö
 	      
-	      int startPage = (((int) ((double)page / 10 + 0.9)) - 1) * 10 + 1;
+	      int startPage = (((int) ((double)page / 10 + 0.9)) - 1) * 10 + 1; //Ã¹ ÆäÀÌÁö
 	      
-	      int endPage = startPage+10-1;
-	      
-	      
+	      int endPage = startPage+10-1; //³¡ ÆäÀÌÁö
 	      
 	      if (endPage > maxPage) endPage = maxPage;
 	      
