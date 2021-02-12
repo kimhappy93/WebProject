@@ -243,6 +243,47 @@ function showSlides(n) {
 
 ![gif5](https://user-images.githubusercontent.com/68000697/105960754-01cb7e00-60c1-11eb-9915-cea4e5595043.gif)
 
+```
+ArrayList<MovieList> movieList=new ArrayList<MovieList>();
+      int page=1;
+      int limit=8;
+      int page=1; //시작 페이지
+      int limit=8; //한 페이지에 영화 8개 표출
+
+      if(request.getParameter("page")!=null){
+	  page=Integer.parseInt(request.getParameter("page"));
+       }
+
+	MovieListService MoiveListService = new MovieListService();
+
+	  int listCount = MoiveListService.getListCount(); 	//영화 게시글 개수
+
+      movieList = MoiveListService.getMovieList(page,limit);
+
+      int maxPage=(int)((double)listCount/limit+0.95); 	//마지막 페이지
+
+      int startPage = (((int) ((double)page / 10 + 0.9)) - 1) * 10 + 1; //첫 페이지
+
+      int endPage = startPage+10-1; //끝 페이지
+
+      if (endPage > maxPage) endPage = maxPage;
+
+      PageInfo pageInfo = new PageInfo();
+      pageInfo.setEndPage(endPage);
+      pageInfo.setListCount(listCount);
+      pageInfo.setMaxPage(maxPage);
+      pageInfo.setPage(page);
+      pageInfo.setStartPage(startPage);   
+
+    request.setAttribute("pageInfo", pageInfo);
+	request.setAttribute("movieList", movieList);
+
+	ActionForward forward = new ActionForward("movieList.jsp",false);
+
+	return forward;
+}
+```
+
 <br>
 
 > 관리자 영화등록
