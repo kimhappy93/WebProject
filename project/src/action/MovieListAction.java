@@ -17,8 +17,8 @@ public class MovieListAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		ArrayList<MovieList> movieList=new ArrayList<MovieList>();
-	      int page=1;
-	      int limit=8;
+	      int page=1; //시작 페이지
+	      int limit=8; //한 페이지에 영화 8개 표출
 		
 	      if(request.getParameter("page")!=null){
 	          page=Integer.parseInt(request.getParameter("page"));
